@@ -103,7 +103,8 @@
           </div>
           <div class="slider__control">
             <button type="button" class="slider__button slider__button--before">было</button>
-            <input type="range" class="slider__range" min="1" max="3" step="1">
+            <label class="visually-hidden" for="slide">Слайд</label>
+            <input type="range" class="slider__range" min="1" max="3" step="1" id="slide">
             <button type="button" class="slider__button slider__button--after">стало</button>
           </div>
         </div>
@@ -114,7 +115,7 @@
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="contacts__content contact">
           <p class="contact__invite">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contact__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>
       <div class="contacts__map">
@@ -130,7 +131,7 @@
         <img src="img/logo/logo-title.svg" width="128" height="24" alt="Логотип интернет-магазина Cat Energy.">
       </a>
     </div>
-    <ul class="social">
+    <ul class="social page-footer-social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href=""
           aria-label="Перейти на страницу интернет-магазина Cat Energy в ВКонтакте" target="_blank">
@@ -158,9 +159,9 @@
     </ul>
     <div class="page-footer__section copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Перейти на страницу разработчика сайта HTML Academy">HTML Academy</a>
+        aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank">HTML Academy</a>
       <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Перейти на страницу разработчика сайта HTML Academy"></a>
+        aria-label="Перейти на страницу разработчика сайта HTML Academy"  target="_blank"></a>
     </div>
   </footer>
 </body>
