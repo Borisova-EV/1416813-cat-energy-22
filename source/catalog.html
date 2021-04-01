@@ -9,21 +9,21 @@
 <body class="page">
   <header class="page-header">
     <div class="page-header__logo logo-block">
-      <a class="logo-block__icon" href="index.html">
+      <a href="index.html" class="logo-block__icon">
         <img src="img/logo/logo-icon.svg" width="34" height="38"
-          alt="Перейти на главную страницу интернет-магазина Cat Energy.">
+          alt="Переход на Главную страницу интернет-магазина Cat Energy.">
       </a>
-      <a class="logo-block__title logo" href="index.html">
+      <a href="index.html" class="logo-block__title logo">
         <img src="img/logo/logo-title.svg" width="101" height="18"
-          alt="Перейти на главную страницу интернет-магазина Cat Energy.">
+          alt="Переход на главную страницу интернет-магазина Cat Energy.">
       </a>
     </div>
     <nav class="page-header__navigation main-navigation">
       <button class="main-navigation__button" aria-label="Открыть меню"></button>
-      <ul class="menu">
+      <ul class="main-navigation__list menu">
         <li class="menu__item"><a href="index.html"
-            aria-label="Переход на Главную страницу интернет-магазина Cat Energy">главная</a></li>
-        <li class="menu__item  menu__item--current"><a>каталог продукции</a></li>
+            aria-label="Перейти на Главную страницу интернет-магазина Cat Energy">главная</a></li>
+        <li class="menu__item menu__item--current"><a>каталог продукции</a></li>
         <li class="menu__item"><a href="form.html"
             aria-label="Перейти на страницу Подбор программы интернет-магазина Cat Energy">подбор программы</a></li>
       </ul>
@@ -102,7 +102,7 @@
         </li>
         <li class="cards__item  card">
           <a href="" class="card__link" aria-label="Перейти на страницу товара">
-            <h3 class="card__title">Cat Energy PRO 500 г</h3>
+            <h3 class="card__title">Cat Energy PRO 1000 г</h3>
             <img src="img/catalog/cat-energy-pro-fish-1000.jpg" width="68" height="86"
               alt="Зелёная баночка 1000 грамм с отметкой 0% Natural, названием и вкусом." class="card__img">
           </a>
@@ -194,7 +194,7 @@
     <section class="catalog-main__all all">
       <h2 class="all__title">Показать еще 100500 товаров</h2>
       <p class="all__text">На самом деле вкусов гораздо больше!</p>
-      <a href="" class="all__link link link--show" aria-label="Перейти на страницу Каталога со всеми товарами">показать
+      <a href="" class="all__link link-show" aria-label="Перейти на страницу Каталога со всеми товарами">показать
         все</a>
     </section>
     <section class="catalog-main__extra extra">
@@ -237,28 +237,25 @@
         <p class="promotion___text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
-    <section class="contacts">
-      <div class="wrapper">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <div class="contacts__content contact">
-          <p class="contact__invite">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contact__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
+    <section class="catalog-main__contacts contacts">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <div class="contacts__content contact">
+        <p class="contact__invite">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616845576036!5m2!1sru!2sru"
-          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__section">
-      <a class="page-footer__logo logo">
-        <img src="img/logo/logo-title.svg" width="128" height="24" alt="Логотип интернет-магазина Cat Energy">
-      </a>
-    </div>
-    <ul class="social">
+    <a href="index.html" class="page-footer__logo logo">
+      <img src="img/logo/logo-title.svg" width="128" height="24"
+        alt="Переход на главную страницу интернет-магазина Cat Energy.">
+    </a>
+    <ul class="page-footer__social  social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href=""
           aria-label="Перейти на страницу интернет-магазина Cat Energy в ВКонтакте" target="_blank">
@@ -286,9 +283,9 @@
     </ul>
     <div class="page-footer__section copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Перейти на страницу разработчика сайта HTML Academy">HTML Academy</a>
+        aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank">HTML Academy</a>
       <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Перейти на страницу разработчика сайта HTML Academy"></a>
+        aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank"></a>
     </div>
   </footer>
 </body>
