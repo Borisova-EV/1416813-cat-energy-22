@@ -30,11 +30,11 @@
     </nav>
   </header>
   <main class="form-main">
-    <section class="form-main__content form">
-      <h1 class="form__title title">Подбор программы</h1>
-      <p class="form__text text">Заполните анкету, и мы подберем
+    <section class="form-main__program program">
+      <h1 class="program__title title">Подбор программы</h1>
+      <p class="program__text text">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
-      <form action="https://echo.htmlacademy.ru" method="POST">
+      <form action="https://echo.htmlacademy.ru" method="POST" class="program-form form">
         <fieldset class="form__section">
           <legend class="visually-hidden">Ваш кот</legend>
           <ul class="form__list">
@@ -55,17 +55,17 @@
         <fieldset class="form__section">
           <legend class="visually-hidden">Ваша цель</legend>
           <ul class="form__list">
-            <li class="form__item">
-              <input type="radio" name="target" id="target-slim" class="form__input-radio" checked>
-              <label class="form__label-radio" for="target-slim">похудение</label>
+            <li class="form__item radio">
+              <input type="radio" name="target" id="target-slim" class="form__input radio__input" checked>
+              <label class="form__label radio__label" for="target-slim">похудение</label>
             </li>
-            <li class="form__item">
-              <input type="radio" name="target" id="target-weight" class="form__input-radio">
-              <label class="form__label-radio" for="target-weight">Набор массы</label>
+            <li class="form__item radio">
+              <input type="radio" name="target" id="target-weight" class="form__input radio__input">
+              <label class="form__label radio__label" for="target-weight">Набор массы</label>
             </li>
-            <li class="form__item">
-              <input type="radio" name="target" id="target-unknown" class="form__input-radio">
-              <label class="form__label-radio" for="target-unknown">Не знаю (Нужен ваш совет)</label>
+            <li class="form__item radio">
+              <input type="radio" name="target" id="target-unknown" class="form__input  radio__input">
+              <label class="form__label radio__label" for="target-unknown">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
@@ -85,27 +85,27 @@
         </fieldset>
         <fieldset class="form__section">
           <legend class="form__legend">Комментарий</legend>
-          <label class="visually-hidden">Напишите ваш комментарий</label>
-          <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <label class="visually-hidden" for="comments">Напишите ваш комментарий</label>
+          <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" id="comments"></textarea>
         </fieldset>
         <fieldset class="form__section">
           <legend class="form__legend">Дополнительно</legend>
           <ul class="form__list">
-            <li class="form__item">
-              <input type="checkbox" class="form__input-checkbox" name="sweetener" id="add-sweetener" checked>
-              <label class="form__legend-checkbox" for="add-sweetener">сахарозаменитель</label>
+            <li class="form__item checkbox">
+              <input type="checkbox" class="form__input checkbox__input" name="sweetener" id="add-sweetener" checked>
+              <label class="form__legend checkbox__label" for="add-sweetener">сахарозаменитель</label>
             </li>
-            <li class="form__item">
-              <input type="checkbox" class="form__input-checkbox" name="water" id="add-water">
-              <label class="form__legend-checkbox" for="add-water">питьевая вода</label>
+            <li class="form__item checkbox">
+              <input type="checkbox" class="form__input checkbox__input" name="water" id="add-water">
+              <label class="form__legend  checkbox__label" for="add-water">питьевая вода</label>
             </li>
-            <li class="form__item">
-              <input type="checkbox" class="form__input-checkbox" name="milk" id="add-milk">
-              <label class="form__legend-checkbox" for="add-milk">молоко</label>
+            <li class="form__item checkbox">
+              <input type="checkbox" class="form__input checkbox__input" name="milk" id="add-milk">
+              <label class="form__legend  checkbox__label" for="add-milk">молоко</label>
             </li>
-            <li class="form__item">
-              <input type="checkbox" class="form__input-checkbox" name="vitamin" id="add-vitamin">
-              <label class="form__legend-checkbox" for="add-vitamin">витамины</label>
+            <li class="form__item checkbox">
+              <input type="checkbox" class="form__input checkbox__input" name="vitamin" id="add-vitamin">
+              <label class="form__legend  checkbox__label" for="add-vitamin">витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -131,7 +131,7 @@
       <img src="img/logo/logo-title.svg" width="128" height="24"
         alt="Переход на главную страницу интернет-магазина Cat Energy.">
     </a>
-    <ul class="social">
+    <ul class="page-footer__social  social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href=""
           aria-label="Перейти на страницу интернет-магазина Cat Energy в ВКонтакте" target="_blank">
@@ -161,7 +161,7 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
         aria-label="Перейти на страницу разработчика сайта HTML Academy">HTML Academy</a>
       <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Перейти на страницу разработчика сайта HTML Academy"></a>
+        aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank"></a>
     </div>
   </footer>
 </body>
