@@ -1,0 +1,64 @@
+.product {
+  position: relative;
+  padding: 8px 33px 22px 20px;
+  margin-bottom: 21px;
+  background-color: $basic-grey;
+
+  &--slim::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    width: 50px;
+    height: 53px;
+    background-image: url(../img/icon/slim-icon.png);
+    background-repeat: no-repeat;
+  }
+  &--pro::before  {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 14px;
+    width: 67px;
+    height: 50px;
+    background-image: url(../img/icon/pro-icon.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.product__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-left: 72px;
+  margin-bottom: 29px;
+}
+
+.product__text {
+  font-family: "Arial", "Nimbus Sans L", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 23px;
+}
+
+.product__link {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-top: 1px solid $grey;
+  padding-top: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    top: 18px;
+    left: 99px;
+    background-image: url(../img/icon/arrow-icon.svg);
+  }
+}
