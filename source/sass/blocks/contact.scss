@@ -10,6 +10,7 @@
 .contact__address {
   display: inline-block;
   width: 139px;
+
   @include arial(14px, 20px);
   color: $dark-grey;
   margin-top: 0;

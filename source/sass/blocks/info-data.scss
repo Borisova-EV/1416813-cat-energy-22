@@ -6,37 +6,36 @@
 
 .info-data__item {
   @include arial;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
   position: relative;
   color: $dark-grey;
-  margin-bottom: 26px;
+
 
   &--eco::before {
     @include pseudo-element(60px, 60px);
-    background-image: url(../img/icon/eco-icon.svg);
+    background-image: url("../img/icon/eco-icon.svg");
     left: -80px;
     top: -3px;
   }
 
   &--form::before {
     @include pseudo-element(60px, 60px);
-    background-image: url(../img/icon/form-icon.svg);
+    background-image: url("../img/icon/form-icon.svg");
     left: -80px;
     bottom: -3px;
   }
 
   &--use::before {
     @include pseudo-element(60px, 60px);
-    background-image: url(../img/icon/use-icon.svg);
+    background-image: url("../img/icon/use-icon.svg");
     left: -80px;
     bottom: -3px;
   }
 
   &--time::before {
     @include pseudo-element(60px, 60px);
-    background-image: url(../img/icon/time-icon.svg);
+    background-image: url("../img/icon/time-icon.svg");
     left: -80px;
     bottom: -3px;
   }
-
 }

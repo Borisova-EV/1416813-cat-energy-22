@@ -1,13 +1,13 @@
 .example-data {
   display: flex;
   justify-content: space-between;
-  margin: 0mm;
+  margin: 0;
 }
 
 .example-data__item {
   width: 124px;
   height: 80px;
-  background-image: url(../img/icon/border-example.svg);
+  background-image: url("../img/icon/border-example.svg");
   background-repeat: no-repeat;
   padding-top: 14px;
   text-align: center;
