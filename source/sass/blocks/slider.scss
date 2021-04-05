@@ -31,10 +31,12 @@
   &--before {
     margin-right: 8px;
   }
-  &:hover{
+
+  &:hover {
     border-bottom: none;
   }
-  &:active{
+
+  &:active {
     border-bottom: 1px solid rgba($black, 0.4);
   }
 }
@@ -46,9 +48,10 @@
   background: transparent;
   margin-right: 5px;
 
-  &::-webkit-slider-runnable-track  {
+  &::-webkit-slider-runnable-track {
     @include range;
   }
+
   &::-moz-range-track {
     @include range;
   }
@@ -56,6 +59,7 @@
   &::-webkit-slider-thumb {
     @include thumb;
   }
+
   &::-moz-range-thumb {
     @include thumb;
   }

@@ -23,6 +23,7 @@ $green-hover: #5EAA2F;
   width: $width;
   height: $height;
 }
+
 @mixin range {
   height: 14px;
   background-color: $white;
@@ -32,13 +33,14 @@ $green-hover: #5EAA2F;
   padding-left: 4px;
   padding-right: 4px;
 }
-@mixin  thumb {
+
+@mixin thumb {
   width: 35px;
-    height: 6px;
-    background-color: $green;
-    border-radius: 6px;
-    appearance: none;
-    cursor: pointer;
+  height: 6px;
+  background-color: $green;
+  border-radius: 6px;
+  appearance: none;
+  cursor: pointer;
 }
 
 @mixin arial($size:14px, $line-height:18px) {

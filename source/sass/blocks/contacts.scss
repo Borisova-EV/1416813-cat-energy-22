@@ -1,12 +1,13 @@
-.contacts__content  {
-@include section(10px);
-padding-top: 14px;
+.contacts__content {
+  @include section(10px);
+  padding-top: 14px;
 
 }
 
-.contacts__map  {
+.contacts__map {
   height: 362px;
 }
-.contacts__map  iframe {
+
+.contacts__map iframe {
   width: 100%;
-  }
+}

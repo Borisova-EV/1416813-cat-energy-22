@@ -11,6 +11,7 @@
 
 a {
   text-decoration: none;
+
   &:visited {
     color: $black;
   }
@@ -27,4 +28,3 @@ img {
 *::after {
   box-sizing: border-box;
 }
-

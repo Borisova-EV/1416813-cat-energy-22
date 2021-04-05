@@ -1,21 +1,23 @@
-.example  {
+.example {
   background-color: $background-grey;
   padding-top: 16px;
 }
+
 .example__title {
   margin-bottom: 33px;
 }
-.example__text  {
-  @include  arial;
+
+.example__text {
+  @include arial;
   color: $dark-grey;
   margin-bottom: 25px;
 }
 
 .example__total {
   font-size: 14px;
-line-height: 20px;
-text-transform: uppercase;
-text-align: center;
-margin-bottom: 42px;
-margin-top: 10px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 42px;
+  margin-top: 10px;
 }

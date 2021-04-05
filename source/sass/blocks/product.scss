@@ -31,7 +31,7 @@
 }
 
 .product__text {
-  @include  arial;
+  @include arial;
   margin-bottom: 23px;
 }
 
@@ -51,8 +51,9 @@
     left: 99px;
     background-image: url(../img/icon/arrow-icon.svg);
   }
-  &:active{
+
+  &:active {
     opacity: 0.3;
-    color:  $black;
+    color: $black;
   }
 }
