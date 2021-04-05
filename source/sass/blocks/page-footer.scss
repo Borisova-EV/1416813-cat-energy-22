@@ -1,0 +1,21 @@
+.page-footer {
+  @include section(0);
+  background-color: $basic-grey;
+  padding-top: 39px;
+  text-align: center;
+}
+.page-footer__logo  {
+  display: block;
+  margin-bottom: 25px;
+&:hover{
+  opacity: 0.8;
+}
+&:active{
+  opacity: 0.6;
+  }
+
+    }
+.page-footer__logo img {
+  width: 128px;
+  height: 24px;
+}

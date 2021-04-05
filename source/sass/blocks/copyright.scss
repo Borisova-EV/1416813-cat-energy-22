@@ -1,0 +1,29 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 22px;
+}
+
+.copyright__link {
+  @include arial(16px, 18px);
+
+  &:active {
+    opacity: 0.3;
+    color: $black;
+  }
+
+  &--icon {
+    display: block;
+    width: 27px;
+    height: 34px;
+  }
+
+  &--icon:hover path {
+    fill: $green;
+  }
+
+  &--icon:active path {
+    fill: rgba($green, 0.3);
+  }
+}
