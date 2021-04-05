@@ -1,10 +1,12 @@
 .page-main__promo {
-  width: 280px;
-  margin: 0 auto;
   margin-bottom: 22px;
 }
+.page-main__products  {
+  @include  section;
+}
 .page-main__info {
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 22px;
+  @include  section;
+}
+.page-main__example {
+  @include  section;
 }
