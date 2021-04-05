@@ -9,4 +9,11 @@
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
+  &:hover {
+    background-color: $green-hover;
+  }
+  &:active  {
+    background-color: $green-hover;
+    color: rgba($white, 0.3);
+  }
 }
