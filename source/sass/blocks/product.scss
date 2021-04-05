@@ -5,22 +5,17 @@
   background-color: $basic-grey;
 
   &--slim::before {
-    content: "";
-    position: absolute;
+    @include pseudo-element(50px, 53px);
     top: 21px;
     left: 22px;
-    width: 50px;
-    height: 53px;
     background-image: url(../img/icon/slim-icon.png);
     background-repeat: no-repeat;
   }
-  &--pro::before  {
-    content: "";
-    position: absolute;
+
+  &--pro::before {
+    @include pseudo-element(67px, 50px);
     top: 24px;
     left: 14px;
-    width: 67px;
-    height: 50px;
     background-image: url(../img/icon/pro-icon.png);
     background-repeat: no-repeat;
   }
@@ -36,9 +31,7 @@
 }
 
 .product__text {
-  font-family: "Arial", "Nimbus Sans L", "Helvetica", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  @include  arial;
   margin-bottom: 23px;
 }
 
@@ -53,12 +46,13 @@
   padding-top: 15px;
 
   &::after {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 12px;
+    @include pseudo-element(24px, 12px);
     top: 18px;
     left: 99px;
     background-image: url(../img/icon/arrow-icon.svg);
+  }
+  &:active{
+    opacity: 0.3;
+    color:  $black;
   }
 }
