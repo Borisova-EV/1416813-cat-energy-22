@@ -15,17 +15,14 @@
 }
 
 .slider__control {
-  margin-left: 38px;
+  padding-left: 38px;
 }
 
 .slider__button {
-  font-family: inherit;
+  @include oswald(16px, 20px);
   border: none;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
   border-bottom: 1px dotted rgba($black, 0.24);
-
 
   &--before {
     margin-right: 8px;

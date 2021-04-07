@@ -1,0 +1,35 @@
+@mixin section($margin-bottom: 22px) {
+  margin: 0 auto $margin-bottom;
+}
+
+@mixin pseudo-element ($width, $height) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $height;
+}
+
+@mixin range {
+  height: 14px;
+  background-color: $white;
+  border: 1px solid $special-grey;
+  border-radius: 6px;
+  padding-top: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+@mixin thumb {
+  width: 35px;
+  height: 6px;
+  background-color: $green;
+  border-radius: 6px;
+  appearance: none;
+  cursor: pointer;
+}
+
+@mixin oswald($size:24px, $line-height:37px) {
+  font-family: "Oswald", "Nimbus Sans L", "Helvetica", "Arial", sans-serif;
+  font-size: $size;
+  line-height: $line-height;
+}

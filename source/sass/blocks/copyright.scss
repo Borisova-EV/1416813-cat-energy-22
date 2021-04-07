@@ -1,12 +1,12 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding-top: 14px;
-  padding-bottom: 22px;
+  height: 78px;
+  align-items: center;
 }
 
 .copyright__link {
-  @include arial(16px, 18px);
+  font-size: 16px;
 
   &:active {
     opacity: 0.3;
@@ -17,13 +17,17 @@
     display: block;
     width: 27px;
     height: 34px;
-  }
 
-  &--icon:hover path {
-    fill: $green;
-  }
+    &:hover {
+      path {
+        fill: $green;
+      }
+    }
 
-  &--icon:active path {
-    fill: rgba($green, 0.3);
+    &:active {
+      path {
+        fill: rgba($green, 0.3);
+      }
+    }
   }
 }

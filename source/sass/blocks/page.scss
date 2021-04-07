@@ -1,5 +1,9 @@
 .page {
   min-height: 100%;
-  font-family: "Oswald", "Nimbus Sans L", "Helvetica", "Arial", sans-serif;
   margin: 0;
+  font-family: "Arial", "Nimbus Sans L", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
+  background-color: $white;
 }

@@ -1,11 +1,9 @@
 .title {
-  font-size: 36px;
-  line-height: 40px;
+  @include oswald(36px, 40px);
   font-weight: normal;
 }
 
 .title--attention {
   line-height: 36px;
   color: $white;
-  /*text-align: center;*/
 }

@@ -3,7 +3,7 @@
 $black: #000000;
 $green: #68b738;
 $white: #ffffff;
-$basic-grey: #f2f2f2;
+
 //others
 $light-grey: #e6e6e6;
 $basic-grey: #f2f2f2;
@@ -14,40 +14,3 @@ $special-grey: #cdcdcd;
 $green-hover: #5eaa2f;
 
 // mixin
-@mixin section($margin-bottom: 22px) {
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: $margin-bottom;
-}
-
-@mixin pseudo-element ($width, $height) {
-  content: "";
-  position: absolute;
-  width: $width;
-  height: $height;
-}
-
-@mixin range {
-  height: 14px;
-  background-color: $white;
-  border: 1px solid $special-grey;
-  border-radius: 6px;
-  padding-top: 3px;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-@mixin thumb {
-  width: 35px;
-  height: 6px;
-  background-color: $green;
-  border-radius: 6px;
-  appearance: none;
-  cursor: pointer;
-}
-
-@mixin arial($size:14px, $line-height:18px) {
-  font-family: "Arial", "Nimbus Sans L", "Helvetica", sans-serif;
-  font-size: $size;
-  line-height: $line-height;
-}

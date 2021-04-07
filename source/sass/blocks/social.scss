@@ -19,20 +19,32 @@
   }
 }
 
-.social__link:hover path {
-  fill: $green;
-}
+.social__link {
+  &:hover {
+    path {
+      fill: $green;
+    }
+  }
 
-.social__link:active path {
-  fill: rgba($green, 0.3);
-}
+  &:active {
+    path {
+      fill: rgba($green, 0.3);
+    }
+  }
 
-.social__link--facebook:hover path {
-  fill: none;
-  stroke: $green;
-}
+  &--facebook {
+    &:hover {
+      path {
+        fill: none;
+        stroke: $green;
+      }
+    }
 
-.social__link--facebook:active path {
-  fill: none;
-  stroke: rgba($green, 0.3);
+    &:active {
+      path {
+        fill: none;
+        stroke: rgba($green, 0.3);
+      }
+    }
+  }
 }

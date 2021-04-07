@@ -1,12 +1,7 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0 none;
-  clip-path: inset(100%);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 a {
@@ -23,8 +18,13 @@ img {
   object-fit: contain;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0 none;
+  clip-path: inset(100%);
 }

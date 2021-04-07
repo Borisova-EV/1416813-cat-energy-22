@@ -1,17 +1,16 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contact__invite {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 21px;
+  @include oswald(16px, 18px);
   text-transform: uppercase;
   margin-top: 0;
-  margin-right: 14px;
 }
 
 .contact__address {
-  display: inline-block;
-  width: 139px;
-
-  @include arial(14px, 20px);
+  line-height: 20px;
   color: $dark-grey;
   margin-top: 0;
 }

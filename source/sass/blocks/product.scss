@@ -1,49 +1,57 @@
 .product {
   position: relative;
-  padding: 8px 33px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 21px;
   background-color: $basic-grey;
 
-  &--slim::before {
-    @include pseudo-element(50px, 53px);
-    top: 21px;
-    left: 22px;
-    background-image: url("../img/icon/slim-icon.png");
-    background-repeat: no-repeat;
+  &--slim {
+    &::before {
+      @include pseudo-element(50px, 53px);
+      top: 21px;
+      left: 22px;
+      background-image: url("../img/icon/slim-icon.png");
+      background-repeat: no-repeat;
+    }
   }
 
-  &--pro::before {
-    @include pseudo-element(67px, 50px);
-    top: 24px;
-    left: 14px;
-    background-image: url("../img/icon/pro-icon.png");
-    background-repeat: no-repeat;
+  &--pro {
+    &::before {
+      @include pseudo-element(67px, 50px);
+      top: 24px;
+      left: 14px;
+      background-image: url("../img/icon/pro-icon.png");
+      background-repeat: no-repeat;
+    }
   }
 }
 
 .product__title {
-  font-size: 24px;
-  line-height: 37px;
+  @include oswald(24px, 37px);
   text-transform: uppercase;
   font-weight: normal;
-  padding-left: 72px;
-  margin-bottom: 29px;
+  padding-left: 11px;
+  padding-top: 9px;
+  margin-bottom: 14px;
 }
 
 .product__text {
-  @include arial;
-  margin-bottom: 23px;
+  padding-left: 19px;
+  margin-bottom: 26px;
+  margin-right: 18px;
 }
 
 .product__link {
+  @include oswald (16px, 16px);
   display: block;
   position: relative;
   width: 100%;
-  font-size: 16px;
-  line-height: 16px;
+  height: 54px;
   text-transform: uppercase;
   border-top: 1px solid $grey;
   padding-top: 15px;
+  color: $black;
 
   &::after {
     @include pseudo-element(24px, 12px);

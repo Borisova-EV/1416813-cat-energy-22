@@ -14,14 +14,14 @@
 }
 
 .example-data__number {
-  font-size: 24px;
-  line-height: 24px;
+  @include oswald(24px, 24px);
   text-transform: uppercase;
   margin-bottom: 9px;
 }
 
 .example-data__description {
-  @include arial(12px, 12px);
+  font-size: 12px;
+  line-height: 12px;
   color: $dark-grey;
   width: 54px;
   margin: 0 auto;

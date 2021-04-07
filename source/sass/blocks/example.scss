@@ -8,16 +8,14 @@
 }
 
 .example__text {
-  @include arial;
   color: $dark-grey;
   margin-bottom: 25px;
 }
 
 .example__total {
-  font-size: 14px;
-  line-height: 20px;
+  @include oswald(14px, 20px);
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 42px;
-  margin-top: 10px;
+  margin-top: 0;
 }

@@ -1,14 +1,13 @@
 .button {
+  @include oswald(14px, 18px);
   display: block;
   width: 100%;
-  font-size: 14px;
-  line-height: 18px;
+  height: 40px;
   text-align: center;
   background-color: $green;
   color: $white;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
 
   &:hover {
     background-color: $green-hover;
@@ -17,5 +16,9 @@
   &:active {
     background-color: $green-hover;
     color: rgba($white, 0.3);
+  }
+
+  &:visited {
+    color: $white;
   }
 }
