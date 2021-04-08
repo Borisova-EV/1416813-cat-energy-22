@@ -1,0 +1,15 @@
+.page-main__promo {
+  margin-bottom: 22px;
+}
+
+.page-main__products {
+  @include section(8px);
+}
+
+.page-main__info {
+  @include section;
+}
+
+.page-main__example {
+  @include section;
+}

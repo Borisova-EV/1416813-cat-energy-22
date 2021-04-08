@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page">
@@ -21,10 +22,11 @@
     <nav class="page-header__navigation main-navigation">
       <button class="main-navigation__button" aria-label="Открыть меню"></button>
       <ul class="main-navigation__list menu">
-        <li class="menu__item  menu__item--current"><a>главная</a></li>
-        <li class="menu__item"><a href="" aria-label="Перейти на страницу Каталог интернет-магазина Cat Energy">каталог
+        <li class="menu__item"><a class="menu__link menu__link--current">главная</a></li>
+        <li class="menu__item"><a class="menu__link" href=""
+            aria-label="Перейти на страницу Каталог интернет-магазина Cat Energy">каталог
             продукции</a></li>
-        <li class="menu__item"><a href=""
+        <li class="menu__item"><a class="menu__link" href=""
             aria-label="Перейти на страницу Подбор программы интернет-магазина Cat Energy">подбор программы</a></li>
       </ul>
     </nav>
@@ -32,12 +34,15 @@
   <main class="page-main">
     <h1 class="visually-hidden">Интернет магазин "Cat Energy"</h1>
     <section class="page-main__promo promo">
-      <h2 class="promo__title title title--attention">Функциональное питание для котов</h2>
-      <p class="promo__intro">Занялся собой? Займись котом!</p>
-      <img src="img/promo/promo-product.jpg" width="280" height="270"
-        alt="Оранжевая баночка с питанием для котов Cat Energy Pro со вкусом курицы.">
-      <a href="" class="promo__button button"
-        aria-label="Перейти на страницу Подбор программы интернет-магазина Cat Energy">подобрать программу</a>
+      <div class="promo__background"></div>
+      <div class="promo__wrapper">
+        <h2 class="promo__title title title--attention">Функциональное питание для котов</h2>
+        <p class="promo__intro">Занялся собой? Займись котом!</p>
+        <img src="img/promo/promo-product.png" width="280" height="270"
+          alt="Оранжевая баночка с питанием для котов Cat Energy Pro со вкусом курицы.">
+        <a href="" class="promo__button button"
+          aria-label="Перейти на страницу Подбор программы интернет-магазина Cat Energy">подобрать программу</a>
+      </div>
     </section>
     <section class="page-main__products products">
       <h2 class="visually-hidden">Наши продукты</h2>
@@ -90,13 +95,13 @@
       <p class="example__total">Затраты на питание: 15 000 РУБ.</p>
       <div class="example__slider slider">
         <div class="slider__content">
-          <img src="img/cat/fat-cat.jpg" width="311" height="232" alt="Кот с избыточным весом." class="slider__img">
-          <img src="img/cat/slim-cat.jpg" width="311" height="232" alt="Худой кот." class="slider__img">
+          <img src="img/cat/fat-cat.png" width="311" height="232" alt="Кот с избыточным весом." class="slider__img">
+          <img src="img/cat/slim-cat.png" width="311" height="232" alt="Худой кот." class="slider__img">
         </div>
         <div class="slider__control">
           <button type="button" class="slider__button slider__button--before">было</button>
           <label class="visually-hidden" for="slide">Слайд</label>
-          <input type="range" class="slider__range" min="1" max="3" step="1" id="slide">
+          <input type="range" class="slider__range" min="1" max="2" step="1" id="slide">
           <button type="button" class="slider__button slider__button--after">стало</button>
         </div>
       </div>
@@ -104,7 +109,7 @@
     <section class="page-main__contacts contacts">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__content contact">
-        <p class="contact__invite">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contact__invite">приглашаем<br>к сотрудничеству<br> дилеров!</p>
         <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
@@ -137,18 +142,26 @@
       </li>
       <li class="social__item">
         <a class="social__link social__link--facebook" href=""
-          aria-label="Перейти на страницу интернет-магазина Cat Energy в Facebook" target="_blank">
-          <svg width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          aria-label="Перейти на страницу интернет-магазина Cat Energy в Facebook" target="_blank"><svg width="22"
+            height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M11.5.83H8.75c-1.22 0-2.38.48-3.24 1.32a4.45 4.45 0 00-1.34 3.18v2.7H1.42v3.59h2.75v7.19h3.66v-7.2h2.75l.92-3.59H7.83v-2.7c0-.23.1-.46.27-.63.17-.17.4-.26.65-.26h2.75V.83z"
-              stroke="#666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+              d="M16.5 1.83325H13.75C12.5344 1.83325 11.3687 2.30674 10.5091 3.14957C9.64957 3.99239 9.16669 5.1355 9.16669 6.32743V9.02394H6.41669V12.6193H9.16669V19.81H12.8334V12.6193H15.5834L16.5 9.02394H12.8334V6.32743C12.8334 6.08905 12.9299 5.86042 13.1018 5.69186C13.2737 5.52329 13.5069 5.4286 13.75 5.4286H16.5V1.83325Z"
+              stroke="#666666" fill="666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          </svg>
+        </a>
       </li>
     </ul>
     <div class="page-footer__section copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
         aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank">HTML Academy</a>
       <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank"></a>
+        aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <path fill="#2E368F"
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+        </svg>
+      </a>
     </div>
   </footer>
 </body>

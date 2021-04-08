@@ -1,0 +1,29 @@
+.example-data {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.example-data__item {
+  width: 124px;
+  height: 80px;
+  background-image: url("../img/icon/border-example.svg");
+  background-repeat: no-repeat;
+  padding-top: 14px;
+  text-align: center;
+}
+
+.example-data__number {
+  @include oswald(24px, 24px);
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.example-data__description {
+  font-size: 12px;
+  line-height: 12px;
+  color: $dark-grey;
+  width: 54px;
+  margin: 0 auto;
+  text-align: center;
+}

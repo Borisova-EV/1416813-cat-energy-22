@@ -1,0 +1,9 @@
+.title {
+  @include oswald(36px, 40px);
+  font-weight: normal;
+}
+
+.title--attention {
+  line-height: 36px;
+  color: $white;
+}

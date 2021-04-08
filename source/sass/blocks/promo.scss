@@ -1,0 +1,33 @@
+.promo {
+  position: relative;
+}
+
+.promo__background {
+  height: 302px;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to top, rgba($green, 0.85), rgba($green, 0.85)),
+    url("../img/promo/promo-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.promo__wrapper {
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.promo__intro {
+  @include oswald(14px, 14px);
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
