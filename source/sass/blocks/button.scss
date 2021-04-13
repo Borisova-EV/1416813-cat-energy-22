@@ -21,4 +21,24 @@
   &:visited {
     color: $white;
   }
+
+  &--link-show {
+    background-color: $basic-grey;
+    color: $dark-grey;
+
+    &:hover {
+      background-color: $grey-button-hover;
+      color: $dark-grey;
+    }
+
+    &:active {
+      border-color: $grey-button-hover;
+      color: rgba($dark-grey, 0.3);
+    }
+
+    &:visited {
+      background-color: $basic-grey;
+      color: $dark-grey;
+    }
+  }
 }
