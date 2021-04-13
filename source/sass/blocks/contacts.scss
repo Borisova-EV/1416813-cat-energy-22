@@ -1,3 +1,7 @@
+.contacts--grey {
+  background-color: $basic-grey;
+}
+
 .contacts__content {
   @include section(10px);
   padding-top: 14px;
