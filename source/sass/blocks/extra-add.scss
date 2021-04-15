@@ -1,16 +1,20 @@
-.extra-add  {
+.extra-add {
   border-bottom: 1px solid $special-grey;
-}
+ }
+
 .extra-add__item {
   border-top: 1px solid $special-grey;
-  margin-bottom: 19px;
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
 }
 
 .extra-add__title {
-@include oswald (16px, 16px);
-font-weight: normal;
-text-transform: uppercase;
-color: $special-dark-grey;
+  @include oswald (16px, 16px);
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $special-dark-grey;
 }
 
 .extra-add__price {
