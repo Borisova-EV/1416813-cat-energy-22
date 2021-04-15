@@ -3,13 +3,16 @@
 }
 
 .page-main__products {
-  @include section(8px);
+  @include section(20px);
 }
 
 .page-main__info {
-  @include section;
+  @include section(42px);
+  padding-top: 14px;
 }
 
 .page-main__example {
+  padding-top: 27px;
+
   @include section;
 }

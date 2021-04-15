@@ -1,14 +1,14 @@
 .info-data {
-  margin: 0;
-  padding-left: 80px;
   list-style-type: none;
 }
 
 .info-data__item {
-  margin-bottom: 26px;
   position: relative;
   color: $dark-grey;
 
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
 
   &--eco {
     &::before {
