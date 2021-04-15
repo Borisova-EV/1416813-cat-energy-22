@@ -1,9 +1,15 @@
 .title {
   @include oswald(36px, 40px);
   font-weight: normal;
+
+  &--attention {
+    line-height: 36px;
+    color: $white;
+  }
 }
 
-.title--attention {
-  line-height: 36px;
-  color: $white;
+.form-main {
+  .title {
+    line-height: 36px;
+  }
 }

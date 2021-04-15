@@ -1,5 +1,7 @@
-.contacts--grey {
-  background-color: $basic-grey;
+.contacts {
+  &--grey {
+    background-color: $basic-grey;
+  }
 }
 
 .contacts__content {
