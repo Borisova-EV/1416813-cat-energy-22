@@ -1,16 +1,19 @@
 .contact {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
 }
 
 .contact__invite {
   @include oswald(16px, 18px);
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact__address {
   line-height: 20px;
   color: $dark-grey;
   margin-top: 0;
+  margin-bottom: 0;
 }

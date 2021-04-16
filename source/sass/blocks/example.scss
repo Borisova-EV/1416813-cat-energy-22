@@ -14,6 +14,10 @@
   margin-top: 0;
 }
 
+.example__list {
+  margin-bottom: 10px;
+}
+
 .example__total {
   @include oswald(14px, 20px);
   text-transform: uppercase;

@@ -7,12 +7,12 @@
 }
 
 .page-main__info {
-  @include section(42px);
-  padding-top: 14px;
+  @include section(46px);
+  padding-top: 7px;
 }
 
 .page-main__example {
-  padding-top: 27px;
-
   @include section;
+  padding-top: 27px;
+  padding-bottom: 34px;
 }
