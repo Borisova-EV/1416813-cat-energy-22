@@ -1,0 +1,12 @@
+.program {
+  @include section(32px);
+}
+
+.program__title {
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
+.program__text {
+  margin-bottom: 39px;
+}
