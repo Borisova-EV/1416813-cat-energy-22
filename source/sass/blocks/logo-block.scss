@@ -1,7 +1,6 @@
 .logo-block {
   height: 30px;
   display: flex;
-  //justify-content: space-between;
   align-items: center;
 
   &:hover {
@@ -17,4 +16,10 @@
   flex-grow: 1;
   text-align: center;
   margin-right: 38px;
+}
+
+.logo-block__icon {
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
 }

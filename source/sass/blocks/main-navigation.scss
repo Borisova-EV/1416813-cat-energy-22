@@ -1,0 +1,11 @@
+.main-navigation__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-navigation__button {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
