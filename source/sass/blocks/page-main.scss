@@ -8,6 +8,11 @@
 
 .page-main__products {
   @include section(20px);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .page-main__info {

@@ -30,23 +30,41 @@
   padding-left: 71px;
   margin-bottom: 29px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .product__text {
   margin-top: 0;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .product__link {
   @include oswald (16px, 16px);
   display: block;
   position: relative;
+  padding-bottom: 18px;
   width: 100%;
-  height: 57px;
   text-transform: uppercase;
   border-top: 1px solid $grey;
   padding-top: 18px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 53px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::after {
     @include pseudo-element(24px, 12px);
