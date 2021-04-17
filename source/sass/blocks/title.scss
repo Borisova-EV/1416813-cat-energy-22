@@ -8,6 +8,12 @@
     color: $white;
   }
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
+
   .form-main & {
     line-height: 36px;
   }
