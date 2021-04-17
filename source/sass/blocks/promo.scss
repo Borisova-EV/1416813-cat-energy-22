@@ -16,19 +16,25 @@
 .promo__wrapper {
   margin: 0 auto;
   padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .promo__title {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   text-align: center;
 }
 
 .promo__intro {
   @include oswald(14px, 14px);
   color: $white;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 29px;
   margin-top: 0;
+}
+
+.promo__img {
+  margin-bottom: 3px;
 }
