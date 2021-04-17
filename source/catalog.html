@@ -4,16 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page">
   <header class="page-header">
     <div class="page-header__logo logo-block">
-      <a href="index.html" class="logo-block__icon">
+      <a class="logo-block__icon" href="index.html">
         <img src="img/logo/logo-icon.svg" width="34" height="38"
-          alt="Переход на Главную страницу интернет-магазина Cat Energy.">
+          alt="Переход на главную страницу интернет-магазина Cat Energy.">
       </a>
-      <a href="index.html" class="logo-block__title logo">
+      <a class="logo-block__title logo" href="index.html">
         <img src="img/logo/logo-title.svg" width="101" height="18"
           alt="Переход на главную страницу интернет-магазина Cat Energy.">
       </a>
@@ -21,16 +22,17 @@
     <nav class="page-header__navigation main-navigation">
       <button class="main-navigation__button" aria-label="Открыть меню"></button>
       <ul class="main-navigation__list menu">
-        <li class="menu__item"><a href="index.html"
-            aria-label="Перейти на Главную страницу интернет-магазина Cat Energy">главная</a></li>
-        <li class="menu__item menu__item--current"><a>каталог продукции</a></li>
-        <li class="menu__item"><a href="form.html"
+        <li class="menu__item"><a class="menu__link menu__link--current" href="index.html">главная</a></li>
+        <li class="menu__item"><a class="menu__link" href=""
+            aria-label="Перейти на страницу Каталог интернет-магазина Cat Energy">каталог
+            продукции</a></li>
+        <li class="menu__item"><a class="menu__link" href="form.html"
             aria-label="Перейти на страницу Подбор программы интернет-магазина Cat Energy">подбор программы</a></li>
       </ul>
     </nav>
   </header>
   <main class="catalog-main">
-    <h1 class="catalog-main__tittle title">Каталог продукции</h1>
+    <h1 class="catalog-main__title title">Каталог продукции</h1>
     <section class="catalog-main__catalog catalog">
       <h2 class="visually-hidden">Основной ассортимент</h2>
       <ul class="catalog__list cards">
@@ -189,7 +191,7 @@
           <a class="card__submit button" href="" aria-label="Перейти на страницу оформления заказа">заказать</a>
         </li>
         <li class="cards__item  cards__item--all card">
-          <h3 class="card__title">Показать еще 100500 товаров</h3>
+          <h3 class="card__title  card__title--all">Показать еще 100500 товаров</h3>
           <p class="card__text">На самом деле вкусов гораздо больше!</p>
           <a href="" class="card__link button button--link-show" aria-label="Перейти на страницу Каталога со всеми товарами">показать
             все</a>
@@ -205,7 +207,7 @@
             <dt>1 упаковка (100 г)</dt>
             <dd>200 Р.</dd>
           </dl>
-          <a href="" class="extra-add__link link" aria-label="Перейти на страницу оформления заказа">заказать</a>
+          <a href="" class="extra-add__link button" aria-label="Перейти на страницу оформления заказа">заказать</a>
         </li>
         <li class="extra-add__item">
           <h3 class="extra-add__title">питьевая вода</h3>
@@ -213,7 +215,7 @@
             <dt>5 литров</dt>
             <dd>50 Р.</dd>
           </dl>
-          <a href="" class="extra-add__link link" aria-label="Перейти на страницу оформления заказа">заказать</a>
+          <a href="" class="extra-add__link button" aria-label="Перейти на страницу оформления заказа">заказать</a>
         </li>
         <li class="extra-add__item">
           <h3 class="extra-add__title">молоко</h3>
@@ -221,7 +223,7 @@
             <dt>1 литр</dt>
             <dd>100 Р.</dd>
           </dl>
-          <a href="" class="extra-add__link link" aria-label="Перейти на страницу оформления заказа">заказать</a>
+          <a href="" class="extra-add__link button" aria-label="Перейти на страницу оформления заказа">заказать</a>
         </li>
         <li class="extra-add__item">
           <h3 class="extra-add__title">витамины</h3>
@@ -229,17 +231,17 @@
             <dt>1 упаковка (30 г)</dt>
             <dd>300 Р.</dd>
           </dl>
-          <a href="" class="extra-add__link link" aria-label="Перейти на страницу оформления заказа">заказать</a>
+          <a href="" class="extra-add__link button" aria-label="Перейти на страницу оформления заказа">заказать</a>
         </li>
       </ul>
       <div class="extra__promotion promotion">
-        <p class="promotion___text">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="promotion___text">Закажите все <br> и получите чехол для кота в подарок!</p>
       </div>
     </section>
-    <section class="catalog-main__contacts contacts">
-      <h2 class="visually-hidden">Наш адрес</h2>
+    <section class="catalog-main__contacts contacts  contacts--grey">
+    <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__content contact">
-        <p class="contact__invite">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contact__invite">приглашаем<br>к сотрудничеству<br> дилеров!</p>
         <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
@@ -250,11 +252,10 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a href="index.html" class="page-footer__logo logo">
-      <img src="img/logo/logo-title.svg" width="128" height="24"
-        alt="Переход на главную страницу интернет-магазина Cat Energy.">
+    <a class="page-footer__logo logo">
+      <img src="img/logo/logo-title.svg" width="128" height="24" alt="Логотип интернет-магазина Cat Energy.">
     </a>
-    <ul class="page-footer__social  social">
+    <ul class="social page-footer__social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href=""
           aria-label="Перейти на страницу интернет-магазина Cat Energy в ВКонтакте" target="_blank">
@@ -273,18 +274,26 @@
       </li>
       <li class="social__item">
         <a class="social__link social__link--facebook" href=""
-          aria-label="Перейти на страницу интернет-магазина Cat Energy в Facebook" target="_blank">
-          <svg width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          aria-label="Перейти на страницу интернет-магазина Cat Energy в Facebook" target="_blank"><svg width="22"
+            height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M11.5.83H8.75c-1.22 0-2.38.48-3.24 1.32a4.45 4.45 0 00-1.34 3.18v2.7H1.42v3.59h2.75v7.19h3.66v-7.2h2.75l.92-3.59H7.83v-2.7c0-.23.1-.46.27-.63.17-.17.4-.26.65-.26h2.75V.83z"
-              stroke="#666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+              d="M16.5 1.83325H13.75C12.5344 1.83325 11.3687 2.30674 10.5091 3.14957C9.64957 3.99239 9.16669 5.1355 9.16669 6.32743V9.02394H6.41669V12.6193H9.16669V19.81H12.8334V12.6193H15.5834L16.5 9.02394H12.8334V6.32743C12.8334 6.08905 12.9299 5.86042 13.1018 5.69186C13.2737 5.52329 13.5069 5.4286 13.75 5.4286H16.5V1.83325Z"
+              stroke="#666666" fill="666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          </svg>
+        </a>
       </li>
     </ul>
     <div class="page-footer__section copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
         aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank">HTML Academy</a>
       <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank"></a>
+        aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <path fill="#2E368F"
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+        </svg>
+      </a>
     </div>
   </footer>
 </body>

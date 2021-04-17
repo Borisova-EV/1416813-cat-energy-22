@@ -1,6 +1,7 @@
 .title {
   @include oswald(36px, 40px);
   font-weight: normal;
+  margin-top: 0;
 
   &--attention {
     line-height: 36px;
@@ -8,6 +9,10 @@
   }
 
   .form-main & {
+    line-height: 36px;
+  }
+
+  .catalog-main & {
     line-height: 36px;
   }
 }

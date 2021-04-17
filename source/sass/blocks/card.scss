@@ -1,0 +1,17 @@
+.card__title {
+  @include oswald(16px, 20px);
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  font-weight: normal;
+
+  &--all {
+    color: $special-black;
+  }
+}
+
+.card__table,
+.card__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+}
