@@ -1,9 +1,17 @@
 .info__title {
   margin-top: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .info__list {
   margin: 0;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }

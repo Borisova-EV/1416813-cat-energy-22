@@ -1,13 +1,40 @@
 .info-data {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 178px;
+    row-gap: 35px;
+  }
 }
 
 .info-data__item {
   position: relative;
   color: $dark-grey;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $tablet-width) {
+      margin-right: 60px;
+    }
+  }
+
+  &:nth-child(even) {
+    @media (min-width: $tablet-width) {
+      margin-right: 70px;
+    }
   }
 
   &--eco {
