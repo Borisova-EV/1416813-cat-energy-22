@@ -1,9 +1,23 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    background-color: $background-grey;
+    width: 100%;
+  }
+}
+
 .slider__content {
   width: 280px;
   height: 232px;
   overflow: hidden;
   display: flex;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 50%;
+    left: 25%;
+  }
 }
 
 .slider__img {
@@ -12,6 +26,12 @@
 
 .slider__control {
   padding-left: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+    padding-left: 60px;
+    padding-top: 360px;
+  }
 }
 
 .slider__button {
@@ -19,6 +39,12 @@
   border: none;
   text-transform: uppercase;
   border-bottom: 1px dotted rgba($black, 0.24);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: inherit;
+  }
 
   &--before {
     margin-right: 8px;
@@ -40,19 +66,40 @@
   background: transparent;
   margin-right: 5px;
 
+  @media (min-width: $tablet-width) {
+    width: 75%;
+    margin: 0;
+  }
+
   &::-webkit-slider-runnable-track {
     @include range;
+
+    @media (min-width: $tablet-width) {
+      background-color: $special-grey;
+    }
   }
 
   &::-moz-range-track {
     @include range;
+
+    @media (min-width: $tablet-width) {
+      background-color: $special-grey;
+    }
   }
 
   &::-webkit-slider-thumb {
     @include thumb;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -15px;
+    }
   }
 
   &::-moz-range-thumb {
     @include thumb;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -15px;
+    }
   }
 }

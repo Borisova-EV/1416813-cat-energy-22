@@ -7,12 +7,25 @@
 .contacts__content {
   @include section(25px);
   padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 71px;
+    padding-right: 71px;
+  }
 }
 
 .contacts__map {
   height: 362px;
 
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
   iframe {
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      height: 100%;
+    }
   }
 }

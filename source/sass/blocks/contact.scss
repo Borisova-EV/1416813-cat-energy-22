@@ -1,7 +1,6 @@
 .contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact__invite {
@@ -9,6 +8,12 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+  width: 25%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contact__address {
@@ -16,4 +21,5 @@
   color: $dark-grey;
   margin-top: 0;
   margin-bottom: 0;
+  width: 25%;
 }

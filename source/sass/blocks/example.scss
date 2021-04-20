@@ -1,6 +1,5 @@
 .example {
   background-color: $background-grey;
-  padding-top: 16px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -23,12 +22,16 @@
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 54px;
   }
 }
 
 .example__list {
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .example__total {
@@ -37,4 +40,31 @@
   text-align: center;
   margin-bottom: 42px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 25%;
+    text-align: end;
+    padding-top: 12px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__block {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 215px;
+}
+
+.example__slider {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 73px;
+    position: relative;
+      }
 }
