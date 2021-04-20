@@ -57,9 +57,11 @@
 }
 
 .example__block {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 215px;
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 215px;
+  }
 }
 
 .example__slider {
