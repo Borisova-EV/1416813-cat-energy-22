@@ -28,13 +28,13 @@
 }
 
 .example__list {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 .example__total {
   @include oswald(14px, 20px);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 42px;
   margin-top: 0;
 }
