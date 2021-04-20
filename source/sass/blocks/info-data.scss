@@ -3,9 +3,9 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 178px;
-    row-gap: 35px;
+    grid-template-columns: auto auto;
+    column-gap: 128px;
+    row-gap: 135px;
   }
 }
 
@@ -25,15 +25,9 @@
     }
   }
 
-  &:nth-child(odd) {
-    @media (min-width: $tablet-width) {
-      margin-right: 60px;
-    }
-  }
-
   &:nth-child(even) {
     @media (min-width: $tablet-width) {
-      margin-right: 70px;
+      margin-right: 90px;
     }
   }
 

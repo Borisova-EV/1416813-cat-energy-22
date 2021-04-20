@@ -7,16 +7,16 @@
 .example-data__item {
   width: 124px;
   height: 80px;
-  background-image: url("../img/icon/border-example.svg");
   background-repeat: no-repeat;
-  padding-top: 14px;
   text-align: center;
 }
 
 .example-data__number {
   @include oswald(24px, 24px);
   text-transform: uppercase;
-  margin-bottom: 9px;
+  border: 1px solid $special-grey;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .example-data__description {
@@ -26,4 +26,6 @@
   width: 54px;
   margin: 0 auto;
   text-align: center;
+  background-color: $background-grey;
+  margin-top: -5px;
 }

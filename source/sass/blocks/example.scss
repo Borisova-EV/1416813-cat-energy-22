@@ -1,17 +1,30 @@
 .example {
   background-color: $background-grey;
   padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border-top: 1px solid $light-grey;
+  }
 }
 
 .example__title {
   margin-bottom: 33px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .example__text {
   color: $dark-grey;
   margin-bottom: 25px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .example__list {

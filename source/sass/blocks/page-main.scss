@@ -19,10 +19,20 @@
 .page-main__info {
   @include section(46px);
   padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 29px;
+    margin-bottom: 105px;
+  }
 }
 
 .page-main__example {
   @include section;
   padding-top: 27px;
   padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 29px;
+    padding-top: 40px;
+  }
 }
