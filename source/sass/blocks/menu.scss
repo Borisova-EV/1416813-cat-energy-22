@@ -11,6 +11,11 @@
     line-height: 24px;
     font-weight: 400;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .menu__item {
@@ -31,6 +36,10 @@
 
 .menu__link {
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 
   &:hover {
     color: rgba($black, 0.6);
