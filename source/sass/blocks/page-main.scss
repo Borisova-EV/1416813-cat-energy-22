@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 530px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 273px;
+  }
 }
 
 .page-main__products {
@@ -13,6 +17,12 @@
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 65px;
   }
 }
 

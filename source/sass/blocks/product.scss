@@ -23,6 +23,7 @@
   }
 }
 
+
 .product__title {
   @include oswald(24px, 37px);
   text-transform: uppercase;
@@ -37,6 +38,18 @@
     line-height: 36px;
     margin-bottom: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    padding-left: 24px;
+    margin-bottom: 73px;
+  }
+
+  .product:nth-child(2) & {
+    @media (min-width: $desktop-width) {
+      padding-left: 60px;
+    }
+  }
 }
 
 .product__text {
@@ -45,6 +58,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
   }
 }
 
