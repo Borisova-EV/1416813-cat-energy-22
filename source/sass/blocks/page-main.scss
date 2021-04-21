@@ -35,6 +35,11 @@
     padding-right: 30px;
     margin-bottom: 105px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .page-main__example {

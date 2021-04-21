@@ -1,12 +1,5 @@
 .info-data {
   list-style-type: none;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 128px;
-    row-gap: 135px;
-  }
 }
 
 .info-data__item {
@@ -28,6 +21,10 @@
   &:nth-child(even) {
     @media (min-width: $tablet-width) {
       margin-right: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
     }
   }
 
