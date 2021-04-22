@@ -9,6 +9,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 110px;
+  }
 }
 
 .page-footer__logo {

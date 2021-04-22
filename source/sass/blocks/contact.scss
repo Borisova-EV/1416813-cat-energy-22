@@ -1,6 +1,11 @@
 .contact {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-around;
+  }
+
 }
 
 .contact__invite {
@@ -8,11 +13,12 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  width: 25%;
+  width: 50%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 21px;
+    width: 30%;
   }
 }
 
@@ -21,5 +27,15 @@
   color: $dark-grey;
   margin-top: 0;
   margin-bottom: 0;
-  width: 25%;
+  width: 50%;
+  text-align: start;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    width: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }

@@ -1,17 +1,22 @@
+.slider__content {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
+}
 
 .slider__img {
   display: none;
 
   &--display {
-    display: block;
     object-fit: cover;
-    width: 88%;
-    height: 50%;
-    margin: 0 auto 33px;
+    display: block;
+    height: 232px;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      width: 59%;
-      height: 44%;
+      height: 521px;
     }
 
     @media (min-width: $desktop-width) {
@@ -25,16 +30,15 @@
 .slider__control {
   display: flex;
   justify-content: center;
-  padding-left: 38px;
 
   @media (min-width: $tablet-width) {
     width: 90%;
-    padding-left: 60px;
+    padding-left: 75px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    align-items: center;
     padding-left: 35px;
     width: 100%;
   }
@@ -78,7 +82,6 @@
 
   @media (min-width: $tablet-width) {
     width: 75%;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
