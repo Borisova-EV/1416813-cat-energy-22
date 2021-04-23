@@ -1,8 +1,8 @@
 .card__title {
   @include oswald(16px, 20px);
+  font-weight: normal;
   text-transform: uppercase;
   color: $special-dark-grey;
-  font-weight: normal;
 
   &--all {
     color: $special-black;

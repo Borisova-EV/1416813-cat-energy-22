@@ -7,7 +7,7 @@
 
 .cards__item {
   &:not(:last-child) {
-    border-top: 1px solid $grey;
     margin-bottom: 34px;
+    border-top: 1px solid $grey;
   }
 }

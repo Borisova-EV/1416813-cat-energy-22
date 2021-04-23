@@ -40,6 +40,9 @@
 }
 
 .example__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 31px;
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {

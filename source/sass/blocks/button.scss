@@ -2,19 +2,19 @@
   @include oswald(14px, 18px);
   display: block;
   width: 100%;
-  text-align: center;
-  background-color: $green;
-  color: $white;
-  text-transform: uppercase;
   padding-top: 12px;
   padding-bottom: 10px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $green;
 
   @media (min-width: $tablet-width) {
     width: 32%;
-    font-size: 20px;
-    line-height: 20px;
     padding-top: 14px;
     padding-bottom: 14px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   &:hover {
@@ -22,8 +22,8 @@
   }
 
   &:active {
-    background-color: $green-hover;
     color: rgba($white, 0.3);
+    background-color: $green-hover;
   }
 
   &:visited {
@@ -31,22 +31,22 @@
   }
 
   &--link-show {
-    background-color: $basic-grey;
     color: $dark-grey;
+    background-color: $basic-grey;
 
     &:hover {
-      background-color: $grey-button-hover;
       color: $dark-grey;
+      background-color: $grey-button-hover;
     }
 
     &:active {
-      border-color: $grey-button-hover;
       color: rgba($dark-grey, 0.3);
+      border-color: $grey-button-hover;
     }
 
     &:visited {
-      background-color: $basic-grey;
       color: $dark-grey;
+      background-color: $basic-grey;
     }
   }
 }

@@ -1,7 +1,7 @@
 .logo-block {
-  height: 30px;
   display: flex;
   align-items: center;
+  height: 48px;
 
   &:hover {
     opacity: 0.8;
@@ -14,8 +14,8 @@
 
 .logo-block__title {
   flex-grow: 1;
-  text-align: center;
   margin-right: 38px;
+  text-align: center;
 }
 
 .logo-block__icon {

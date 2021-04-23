@@ -9,15 +9,14 @@
 
 .info__list {
   margin: 0;
-  padding-left: 80px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-    margin-bottom: 72px;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 128px;
     row-gap: 135px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {

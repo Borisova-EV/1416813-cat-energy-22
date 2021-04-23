@@ -12,12 +12,12 @@
     &::before {
       content: "";
       position: absolute;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      border: 1px solid $special-grey;
       bottom: -3px;
       left: -21px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $special-grey;
+      border-radius: 50%;
     }
   }
 
@@ -34,12 +34,12 @@
       &::after {
         content: "";
         position: absolute;
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background-color: $green;
         bottom: 5px;
         left: -13px;
+        width: 14px;
+        height: 14px;
+        background-color: $green;
+        border-radius: 50%;
       }
     }
   }
@@ -56,11 +56,11 @@
     &::before {
       content: "";
       position: absolute;
+      bottom: -3px;
+      left: -23px;
       width: 26px;
       height: 26px;
       border: 1px solid $special-grey;
-      bottom: -3px;
-      left: -23px;
     }
   }
 
@@ -69,9 +69,9 @@
       &::after {
         content: "";
         position: absolute;
+        left: -20px;
         width: 19px;
         height: 15px;
-        left: -20px;
         background-image: url("../img/icon/checkbox.svg");
         background-repeat: no-repeat;
         background-position: center;

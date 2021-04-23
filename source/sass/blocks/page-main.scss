@@ -14,32 +14,32 @@
   @include section(20px);
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 65px;
   }
 }
 
 .page-main__info {
-  @include section(46px);
+  @include section(40px);
   padding-top: 7px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 105px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 105px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 10px;
   }
 }
 
@@ -55,8 +55,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
     display: flex;
     margin-bottom: 0;
+    padding-top: 0;
   }
 }

@@ -4,13 +4,14 @@
 }
 
 .extra__title {
+  margin-bottom: 36px;
+
   @include oswald(24px, 24px);
   font-weight: normal;
-  margin-bottom: 36px;
 }
 
 .extra__list {
-  list-style: none;
   margin-top: 0;
   padding-left: 0;
+  list-style: none;
 }

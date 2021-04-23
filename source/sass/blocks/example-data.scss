@@ -1,4 +1,4 @@
-.example-data {
+/*.example-data {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -6,12 +6,12 @@
   @media (min-width: $desktop-width) {
     justify-content: start;
   }
-}
+}*/
 
 .example-data__item {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  //width: 45%;
 
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
@@ -27,13 +27,14 @@
 }
 
 .example-data__number {
-  @include oswald(24px, 24px);
-  text-transform: uppercase;
-  border: 1px solid $special-grey;
   padding-bottom: 15px;
   padding-top: 15px;
   width: 100%;
+
+  @include oswald(24px, 24px);
+  text-transform: uppercase;
   text-align: center;
+  border: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -42,16 +43,17 @@
 }
 
 .example-data__description {
+  align-self: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
   font-size: 12px;
   line-height: 12px;
   color: $dark-grey;
   background-color: $background-grey;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: -5px;
-  width: 62%;
-  align-self: center;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -60,7 +62,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $background-grey;
     margin-top: -10px;
+    background-color: $background-grey;
   }
 }

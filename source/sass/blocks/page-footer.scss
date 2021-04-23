@@ -1,13 +1,13 @@
 .page-footer {
   @include section(0);
-  background-color: $basic-grey;
   padding-top: 39px;
   text-align: center;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 30px 61px 30px;
     display: flex;
     justify-content: space-between;
+    padding: 80px 30px 61px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,14 +38,15 @@
 }
 
 .page-footer__social {
-  list-style: none;
   margin-top: 0;
+  margin-bottom: 0;
   padding-top: 20px;
   padding-left: 0;
   height: 63px;
+  list-style: none;
   border-bottom: 1px solid $grey;
   border-top: 1px solid $grey;
-  margin-bottom: 0;
+
 
   @media (min-width: $tablet-width) {
     border: none;

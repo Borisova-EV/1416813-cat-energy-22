@@ -1,7 +1,8 @@
 .title {
+  margin-top: 0;
+
   @include oswald(36px, 40px);
   font-weight: normal;
-  margin-top: 0;
 
   &--attention {
     line-height: 36px;
@@ -9,10 +10,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 75%;
     font-size: 60px;
     line-height: 60px;
     color: $black;
-    width: 75%;
   }
 
   .form-main & {

@@ -3,7 +3,9 @@
 }
 
 .info-data__item {
-  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
   color: $dark-grey;
 
   @media (min-width: $tablet-width) {
@@ -11,7 +13,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
@@ -28,39 +30,33 @@
     }
   }
 
+  &::before {
+    @include pseudo-element(60px, 60px);
+    position: static;
+    display: block;
+  }
+
   &--eco {
     &::before {
-      @include pseudo-element(60px, 60px);
       background-image: url("../img/icon/eco-icon.svg");
-      left: -80px;
-      top: -2px;
     }
   }
 
   &--form {
     &::before {
-      @include pseudo-element(60px, 60px);
       background-image: url("../img/icon/form-icon.svg");
-      left: -80px;
-      bottom: -4px;
     }
   }
 
   &--use {
     &::before {
-      @include pseudo-element(60px, 60px);
       background-image: url("../img/icon/use-icon.svg");
-      left: -80px;
-      bottom: -4px;
     }
   }
 
   &--time {
     &::before {
-      @include pseudo-element(60px, 60px);
       background-image: url("../img/icon/time-icon.svg");
-      left: -80px;
-      bottom: -4px;
     }
   }
 }

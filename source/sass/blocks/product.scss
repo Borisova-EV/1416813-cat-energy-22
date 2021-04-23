@@ -25,24 +25,26 @@
 
 
 .product__title {
+  margin-bottom: 29px;
+  margin-top: 0;
+  padding-left: 71px;
+
   @include oswald(24px, 37px);
   text-transform: uppercase;
   font-weight: normal;
-  padding-left: 71px;
-  margin-bottom: 29px;
-  margin-top: 0;
+
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
-    padding-left: 24px;
     margin-bottom: 73px;
+    padding-left: 24px;
+    text-align: center;
   }
 
   .product:nth-child(2) & {
@@ -66,22 +68,23 @@
 }
 
 .product__link {
-  @include oswald (16px, 16px);
-  display: block;
   position: relative;
+  display: block;
+  padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
+
+  @include oswald (16px, 16px);
   text-transform: uppercase;
-  border-top: 1px solid $grey;
-  padding-top: 20px;
   color: $black;
+  border-top: 1px solid $grey;
 
   @media (min-width: $tablet-width) {
-    border: none;
     padding-top: 0;
     padding-bottom: 57px;
     font-size: 20px;
     line-height: 30px;
+    border: none;
   }
 
   &::after {
@@ -92,7 +95,7 @@
   }
 
   &:active {
-    opacity: 0.3;
     color: $black;
+    opacity: 0.3;
   }
 }
