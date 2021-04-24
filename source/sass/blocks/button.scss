@@ -41,7 +41,7 @@
 
     &:active {
       color: rgba($dark-grey, 0.3);
-      border-color: $grey-button-hover;
+      background-color: $grey-button-hover;
     }
 
     &:visited {

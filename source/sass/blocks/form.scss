@@ -86,8 +86,9 @@
     content: "";
     position: absolute;
     z-index: -1;
+    top: 50%;
     width: 100vh;
-    border-top: 2px solid $green;
+    border-bottom: 2px solid $green;
   }
 }
 

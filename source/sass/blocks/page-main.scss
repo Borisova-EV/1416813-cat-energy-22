@@ -44,7 +44,7 @@
 }
 
 .page-main__example {
-  @include section;
+  @include section(2px);
   padding-top: 27px;
   padding-bottom: 34px;
 
