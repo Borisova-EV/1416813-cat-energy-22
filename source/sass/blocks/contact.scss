@@ -1,7 +1,6 @@
 .contact {
-  display: grid;
-  grid-template-columns: 45% 50%;
-  column-gap: 17px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     justify-content: space-around;

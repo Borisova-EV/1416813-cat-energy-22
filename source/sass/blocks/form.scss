@@ -1,21 +1,33 @@
 .form__section {
-  margin: 0;
+  margin-bottom: 9px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
-  padding-top: 22px;
   border: none;
-  border-bottom: 1px solid $grey;
 }
 
 .form__list {
   margin: 0;
-  padding-left: 0;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   list-style: none;
+
+  &--border {
+    padding-bottom: 2px;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+  }
 }
 
 .form__item {
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+
+  &.choice {
+    margin-bottom: 0;
+  }
 }
 
 .form__label,
@@ -26,12 +38,13 @@
 }
 
 .form__label {
-  margin-right: 13px;
+  margin-right: 18px;
 }
 
 .form__input {
-  padding-left: 15px;
   flex-grow: 1;
+  margin: 0;
+  padding-left: 15px;
   min-height: 46px;
   border-color: $special-light-grey;
 
@@ -61,18 +74,20 @@
 
 .form__legend {
   position: relative;
-  padding-top: 26px;
-  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18px;
+  background-color: $white;
 
   @include oswald (24px, 26px);
 
   &::after {
     content: "";
     position: absolute;
-    top: 40px;
-    width: 100%;
-    height: 2px;
-    background-color: $green;
+    z-index: -1;
+    width: 100vh;
+    border-top: 2px solid $green;
   }
 }
 
@@ -82,4 +97,9 @@
   width: 100%;
   line-height: 16px;
   text-align: center;
+}
+
+.form__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
