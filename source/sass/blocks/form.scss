@@ -1,23 +1,30 @@
 .form__section {
-  margin-bottom: 9px;
+  margin-bottom: 19px;
   margin-left: 0;
   margin-right: 0;
-  padding: 0;
+  padding-top: 3px;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 0;
   border: none;
+
+  &:first-child {
+    margin-bottom: 23px;
+  }
+
+  &--border {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+  }
 }
 
 .form__list {
   margin: 0;
-  padding-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
   list-style: none;
-
-  &--border {
-    padding-bottom: 2px;
-    border-top: 1px solid $grey;
-    border-bottom: 1px solid $grey;
-  }
 }
 
 .form__item {
@@ -25,7 +32,11 @@
   align-items: center;
   margin-bottom: 13px;
 
-  &.choice {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--choice {
     margin-bottom: 0;
   }
 }
@@ -39,6 +50,7 @@
 
 .form__label {
   margin-right: 18px;
+  height: 100%;
 }
 
 .form__input {
@@ -62,6 +74,7 @@
 
   &--choice {
     flex-grow: 0;
+    padding-left: 0;
   }
 
   &--textarea {
@@ -74,13 +87,17 @@
 
 .form__legend {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 18px;
+  padding-top: 5px;
   background-color: $white;
 
   @include oswald (24px, 26px);
+
+  .form__section:last-of-type & {
+    margin-bottom: 17px;
+  }
 
   &::after {
     content: "";
