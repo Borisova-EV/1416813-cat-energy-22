@@ -1,15 +1,62 @@
 .page-main__promo {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 530px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 273px;
+  }
 }
 
 .page-main__products {
-  @include section(8px);
+  @include section(20px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .page-main__info {
-  @include section;
+  @include section(40px);
+  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 105px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .page-main__example {
-  @include section;
+  @include section(2px);
+  padding-top: 27px;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
 }

@@ -2,17 +2,47 @@
   &--grey {
     background-color: $basic-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .contacts__content {
-  @include section(10px);
-  padding-top: 14px;
+  @include section(25px);
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 16%;
+    left: 8%;
+    margin-bottom: 0;
+    padding-top: 66px;
+    padding-bottom: 51px;
+    padding-left: 9px;
+    padding-right: 28px;
+    width: 40%;
+    background-color: $white;
+  }
 }
 
 .contacts__map {
   height: 362px;
 
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
   iframe {
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      height: 100%;
+    }
   }
 }

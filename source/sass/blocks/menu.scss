@@ -1,21 +1,46 @@
 .menu {
+  padding: 0;
+  margin: 0;
+
   @include oswald(20px, 20px);
   list-style: none;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 0;
-  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .menu__item {
+  padding-top: 26px;
+  height: 66px;
   text-align: center;
   border-top: 1px solid $light-grey;
-  height: 66px;
-  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    border: none;
+
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
 }
 
 .menu__link {
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 
   &:hover {
     color: rgba($black, 0.6);

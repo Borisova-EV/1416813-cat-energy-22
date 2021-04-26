@@ -1,0 +1,16 @@
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0;
+  min-height: 100%;
+  font-family: "Arial", "Nimbus Sans L", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -1,16 +1,44 @@
 .contact {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-around;
+  }
 }
 
 .contact__invite {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include oswald(16px, 18px);
   text-transform: uppercase;
-  margin-top: 0;
+
+
+  @media (min-width: $tablet-width) {
+    width: 30%;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contact__address {
-  line-height: 20px;
-  color: $dark-grey;
   margin-top: 0;
+  margin-bottom: 0;
+  line-height: 20px;
+  text-align: start;
+  color: $dark-grey;
+
+  & span {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 30%;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }

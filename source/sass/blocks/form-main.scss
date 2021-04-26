@@ -1,3 +1,8 @@
 .form-main__program {
-  padding-top: 27px;
+  margin-bottom: 32px;
+  padding-top: 29px;
+}
+
+.form-main__wrapper {
+  @include section(4px);
 }

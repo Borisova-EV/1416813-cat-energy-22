@@ -1,16 +1,21 @@
 .extra-add {
+  list-style: none;
   border-bottom: 1px solid $special-grey;
 }
 
 .extra-add__item {
+  padding-top: 13px;
   border-top: 1px solid $special-grey;
 
   &:not(:last-child) {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 }
 
 .extra-add__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+
   @include oswald (16px, 16px);
   font-weight: normal;
   text-transform: uppercase;
@@ -18,8 +23,10 @@
 }
 
 .extra-add__price {
-  line-height: 14px;
-  color: $dark-grey;
   display: flex;
   justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 13px;
+  line-height: 14px;
+  color: $dark-grey;
 }

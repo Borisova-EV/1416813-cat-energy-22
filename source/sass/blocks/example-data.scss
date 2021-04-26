@@ -1,29 +1,68 @@
-.example-data {
+/*.example-data {
   display: flex;
   justify-content: space-between;
   margin: 0;
-}
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
+}*/
 
 .example-data__item {
-  width: 124px;
-  height: 80px;
-  background-image: url("../img/icon/border-example.svg");
-  background-repeat: no-repeat;
-  padding-top: 14px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  //width: 45%;
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 41px;
+    }
+  }
 }
 
 .example-data__number {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 100%;
+
   @include oswald(24px, 24px);
   text-transform: uppercase;
-  margin-bottom: 9px;
+  text-align: center;
+  border: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-data__description {
+  align-self: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
   font-size: 12px;
   line-height: 12px;
   color: $dark-grey;
-  width: 54px;
-  margin: 0 auto;
-  text-align: center;
+  background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -10px;
+    background-color: $background-grey;
+  }
 }

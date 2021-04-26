@@ -1,21 +1,33 @@
 .form__section {
-  border: none;
-  border-bottom: 1px solid $grey;
-  margin: 0;
+  margin-bottom: 9px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
-  padding-top: 22px;
+  border: none;
 }
 
 .form__list {
   margin: 0;
-  padding-left: 0;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   list-style: none;
+
+  &--border {
+    padding-bottom: 2px;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+  }
 }
 
 .form__item {
-  margin-bottom: 13px;
   display: flex;
   align-items: center;
+  margin-bottom: 13px;
+
+  &.choice {
+    margin-bottom: 0;
+  }
 }
 
 .form__label,
@@ -26,14 +38,15 @@
 }
 
 .form__label {
-  margin-right: 13px;
+  margin-right: 18px;
 }
 
 .form__input {
-  border-color: $special-light-grey;
-  min-height: 46px;
-  padding-left: 15px;
   flex-grow: 1;
+  margin: 0;
+  padding-left: 15px;
+  min-height: 46px;
+  border-color: $special-light-grey;
 
   &:hover {
     border-color: $special-grey;
@@ -52,33 +65,42 @@
   }
 
   &--textarea {
-    min-height: 150px;
-    width: 100%;
     padding-top: 9px;
     padding-left: 15px;
+    width: 100%;
+    min-height: 150px;
   }
 }
 
 .form__legend {
-  @include oswald (24px, 26px);
   position: relative;
-  width: 100%;
-  padding-top: 26px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18px;
+  background-color: $white;
+
+  @include oswald (24px, 26px);
 
   &::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 40px;
-    background-color: $green;
+    z-index: -1;
+    top: 50%;
+    width: 100vh;
+    border-bottom: 2px solid $green;
   }
 }
 
 .form__comment {
+  margin: 0;
+  padding-top: 21px;
+  width: 100%;
   line-height: 16px;
   text-align: center;
-  width: 100%;
-  padding-top: 21px;
-  margin: 0;
+}
+
+.form__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }

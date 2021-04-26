@@ -1,16 +1,28 @@
 .extra {
-  padding-top: 25px;
   border-top: 1px solid $grey-button-hover;
 }
 
 .extra__title {
+  position: relative;
+  margin-bottom: 36px;
+  padding-right: 22px;
+  width: max-content;
+  background-color: $white;
+
   @include oswald(24px, 24px);
   font-weight: normal;
-  margin-bottom: 36px;
+
+  &::after {
+    @include pseudo-element(100vh, 0);
+    z-index: -1;
+    top: 50%;
+    border-bottom: 2px solid $green;
+  }
 }
 
 .extra__list {
-  list-style: none;
   margin-top: 0;
+  margin-bottom: 38px;
   padding-left: 0;
+  padding-bottom: 20px;
 }

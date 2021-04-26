@@ -1,8 +1,7 @@
 .logo-block {
-  height: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  height: 55px;
 
   &:hover {
     opacity: 0.8;
@@ -10,5 +9,17 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.logo-block__title {
+  flex-grow: 1;
+  margin-right: 38px;
+  text-align: center;
+}
+
+.logo-block__icon {
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
   }
 }

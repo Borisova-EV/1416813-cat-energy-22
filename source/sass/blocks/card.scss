@@ -1,10 +1,16 @@
+.card {
+  border-top: 1px solid $grey;
+}
+
 .card__title {
   @include oswald(16px, 20px);
+  font-weight: normal;
   text-transform: uppercase;
   color: $special-dark-grey;
-  font-weight: normal;
 
   &--all {
+    margin-top: 0;
+    margin-bottom: 0;
     color: $special-black;
   }
 }
@@ -14,4 +20,13 @@
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
+}
+
+.card__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.card__link {
+  display: contents;
 }

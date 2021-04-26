@@ -1,33 +1,108 @@
 .promo {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .promo__background {
+  position: absolute;
+  z-index: -1;
   height: 302px;
   width: 100%;
-  position: absolute;
   background: linear-gradient(to top, rgba($green, 0.85), rgba($green, 0.85)),
     url("../img/promo/promo-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 696px;
+    width: 50%;
+    background-size: 100%, 50% 100%;
+    background-position: right;
+  }
 }
 
 .promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    padding-top: 35px;
+    padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 192px;
+    padding-right: 350px;
+    padding-top: 83px;
+  }
 }
 
 .promo__title {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+    width: 61%;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+  }
 }
 
 .promo__intro {
+  margin-bottom: 29px;
+  margin-top: 0;
+
   @include oswald(14px, 14px);
   color: $white;
-  text-align: center;
   text-transform: uppercase;
-  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
+}
+
+.promo__img {
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    top: 83%;
+    right: 1%;
+    margin-bottom: 0;
+    width: 100%;
+    height: 192%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10%;
+    right: 22%;
+    width: 38%;
+    height: 37%;
+  }
 }

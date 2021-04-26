@@ -7,21 +7,21 @@
   &::before {
     content: "";
     position: absolute;
+    top: 50px;
+    left: 80px;
     width: 78px;
     height: 80px;
     background-image: url("../img/icon/present.png");
     background-repeat: no-repeat;
-    top: 50px;
-    left: 80px;
   }
 }
 
 .promotion___text {
-  line-height: 20px;
-  color: $white;
   position: absolute;
   bottom: 30px;
   left: 50px;
-  text-align: center;
   width: 150px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
 }
