@@ -29,17 +29,19 @@
   text-align: start;
   color: $dark-grey;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: end;
+  }
+
   & span {
     display: block;
 
     @media (min-width: $tablet-width) {
-      margin-top: 18px;
+      margin-top: auto;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 30%;
-    text-align: end;
   }
 
   @media (min-width: $desktop-width) {

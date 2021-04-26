@@ -39,7 +39,13 @@
   color: $black;
 
   @media (min-width: $desktop-width) {
-    color: $white;
+    &--contrast {
+      color: $white;
+
+      &:visited {
+        color: $white;
+      }
+    }
   }
 
   &:hover {
@@ -48,5 +54,9 @@
 
   &:active {
     color: rgba($black, 0.3);
+  }
+
+  &:visited {
+    color: $black;
   }
 }
