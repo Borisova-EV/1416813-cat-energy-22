@@ -1,4 +1,8 @@
 .program__title {
   margin-top: 0;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }

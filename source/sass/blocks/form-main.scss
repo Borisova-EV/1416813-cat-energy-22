@@ -1,8 +1,23 @@
 .form-main__program {
   margin-bottom: 32px;
   padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    margin-bottom: 72px;
+  }
 }
 
 .form-main__wrapper {
   @include section(36px);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 64px;
+  }
+}
+
+.form-main__contacts {
+  padding-top: 38px;
 }

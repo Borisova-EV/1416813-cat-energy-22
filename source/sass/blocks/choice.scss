@@ -17,6 +17,12 @@
       height: 30px;
       border: 1px solid $special-grey;
       border-radius: 50%;
+
+      @media (min-width: $tablet-width) {
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
@@ -38,6 +44,12 @@
         height: 14px;
         background-color: $green;
         border-radius: 50%;
+
+        @media (min-width: $tablet-width) {
+          left: 12px;
+          width: 18px;
+          height: 18px;
+        }
       }
     }
   }
@@ -57,6 +69,12 @@
       width: 30px;
       height: 30px;
       border: 1px solid $special-grey;
+
+      @media (min-width: $tablet-width) {
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
@@ -71,6 +89,10 @@
         background-image: url("../img/icon/checkbox.svg");
         background-repeat: no-repeat;
         background-position: center;
+
+        @media (min-width: $tablet-width) {
+          left: 12px;
+        }
       }
     }
   }
