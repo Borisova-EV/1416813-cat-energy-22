@@ -1,5 +1,9 @@
 .extra {
   border-top: 1px solid $grey-button-hover;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .extra__title {
@@ -12,11 +16,30 @@
   @include oswald(24px, 24px);
   font-weight: normal;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding-left: 69px;
+    padding-right: 39px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   &::after {
     @include pseudo-element(100vh, 0);
     z-index: -1;
     top: 50%;
     border-bottom: 2px solid $green;
+  }
+  //green line
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 70%;
+      width: 60px;
+      border-bottom: 2px solid $green;
+    }
   }
 }
 
@@ -25,4 +48,9 @@
   margin-bottom: 38px;
   padding-left: 0;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+    padding-bottom: 0;
+  }
 }

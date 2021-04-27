@@ -1,5 +1,10 @@
 .card {
   border-top: 1px solid $grey;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    background-image: linear-gradient(to bottom, $white, white 16%, $basic-grey 16%);
+  }
 }
 
 .card__title {
@@ -8,10 +13,25 @@
   text-transform: uppercase;
   color: $special-dark-grey;
 
+  @media (min-width: $tablet-width) {
+    width: 54%;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    & br {
+      display: none;
+    }
+  }
+
   &--all {
     margin-top: 0;
     margin-bottom: 0;
     color: $special-black;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
   }
 }
 
@@ -20,13 +40,50 @@
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .card__text {
   margin-top: 0;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: auto;
+    text-align: center;
+  }
 }
 
 .card__link {
   display: contents;
+}
+
+.card__img {
+  width: 68px;
+  height: 86px;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+    margin-bottom: 55px;
+  }
+
+  &--large {
+    width: 84px;
+    height: 101px;
+
+    @media (min-width: $tablet-width) {
+      width: 168px;
+      height: 206px;
+      margin-bottom: 31px;
+    }
+  }
+}
+
+.card__table {
+  & tr {
+    border-bottom: 1px solid $special-grey;
+  }
 }

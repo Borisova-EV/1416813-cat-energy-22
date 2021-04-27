@@ -1,18 +1,39 @@
 .catalog-main {
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
 }
 
 .catalog-main__title {
   margin-bottom: 41px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 135px;
+  }
 }
 
 .catalog-main__catalog {
   @include section(32px);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .catalog-main__extra {
   @include section(35px);
   padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 76px;
+  }
 }

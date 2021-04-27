@@ -1,11 +1,28 @@
 .extra-add {
   list-style: none;
   border-bottom: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $special-grey;
+  }
 }
 
 .extra-add__item {
   padding-top: 13px;
   border-top: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 38px;
+    column-gap: 200px;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: none;
+    border-bottom: 1px solid $special-grey;
+  }
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -20,6 +37,12 @@
   font-weight: normal;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra-add__price {
@@ -29,4 +52,15 @@
   margin-bottom: 13px;
   line-height: 14px;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.extra-add__link {
+  grid-column: 1/-1;
+  width: 100%;
 }

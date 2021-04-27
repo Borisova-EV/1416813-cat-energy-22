@@ -4,6 +4,17 @@
   background-image: url("../img/promo/promo-catalog-background.jpg");
   background-repeat: no-repeat;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 57px;
+    padding-bottom: 60px;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -13,6 +24,11 @@
     height: 80px;
     background-image: url("../img/icon/present.png");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      position: static;
+      display: block;
+    }
   }
 }
 
@@ -24,4 +40,9 @@
   line-height: 20px;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    text-align: start;
+  }
 }

@@ -33,8 +33,9 @@
   &:visited {
     color: $white;
   }
-
+  // grey button
   &--link-show {
+    width: 100%;
     color: $dark-grey;
     background-color: $basic-grey;
 
