@@ -1,8 +1,37 @@
 .form-main__program {
   margin-bottom: 32px;
   padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    margin-bottom: 81px;
+  }
 }
 
 .form-main__wrapper {
-  @include section(4px);
+  @include section(36px);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.form-main__contacts {
+  padding-top: 38px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }

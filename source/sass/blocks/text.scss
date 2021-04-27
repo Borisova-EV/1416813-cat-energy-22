@@ -1,6 +1,18 @@
 .text {
   width: 81%;
+  margin-top: 0;
 
   @include oswald($size:14px, $line-height:18px);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 52%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
+    max-width: 323px;
+  }
 }

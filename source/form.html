@@ -57,20 +57,20 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__section">
+        <fieldset class="form__section  form__section--border">
           <legend class="visually-hidden">Ваша цель</legend>
-          <ul class="form__list form__list--border">
-            <li class="form__item choice">
+          <ul class="form__list">
+            <li class="form__item form__item--choice choice">
               <input type="radio" name="target" id="target-slim"
                 class="form__input form__input--choice choice__input choice__input--radio" checked>
               <label class="form__label choice__label" for="target-slim">похудение</label>
             </li>
-            <li class="form__item choice">
+            <li class="form__item form__item--choice  choice">
               <input type="radio" name="target" id="target-weight"
                 class="form__input form__input--choice choice__input choice__input--radio">
               <label class="form__label choice__label" for="target-weight">Набор массы</label>
             </li>
-            <li class="form__item choice">
+            <li class="form__item form__item--choice choice">
               <input type="radio" name="target" id="target-unknown"
                 class="form__input  form__input--choice  choice__input choice__input--radio">
               <label class="form__label choice__label" for="target-unknown">Не знаю (Нужен ваш совет)</label>
@@ -79,7 +79,7 @@
         </fieldset>
         <fieldset class="form__section">
           <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
-          <ul class="form__list">
+          <ul class="form__list form__list--columns">
             <li class="form__item">
               <label class="form__label" for="email-owner">E-mail:</label>
               <input type="email" class="form__input" name="email" id="email-owner" required
@@ -101,30 +101,30 @@
         </fieldset>
         <fieldset class="form__section">
           <legend class="form__legend">Дополнительно</legend>
-          <ul class="form__list">
-            <li class="form__item choice">
+          <ul class="form__list checkbox">
+            <li class="form__item form__item--choice choice">
               <input type="checkbox" class="form__input form__input--choice choice__input choice__input--checkbox"
                 name="sweetener" id="add-sweetener" checked>
               <label class="form__label choice__label" for="add-sweetener">сахарозаменитель</label>
             </li>
-            <li class="form__item choice">
+            <li class="form__item form__item--choice choice">
               <input type="checkbox" class="form__input form__input--choice choice__input choice__input--checkbox"
                 name="water" id="add-water">
               <label class="form__label  choice__label" for="add-water">питьевая вода</label>
             </li>
-            <li class="form__item choice">
+            <li class="form__item form__item--choice choice">
               <input type="checkbox" class="form__input form__input--choice choice__input choice__input--checkbox"
                 name="milk" id="add-milk">
               <label class="form__label  choice__label" for="add-milk">молоко</label>
             </li>
-            <li class="form__item choice">
+            <li class="form__item form__item--choice choice">
               <input type="checkbox" class="form__input form__input--choice choice__input choice__input--checkbox"
                 name="vitamin" id="add-vitamin">
               <label class="form__label  choice__label" for="add-vitamin">витамины</label>
             </li>
           </ul>
         </fieldset>
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper--columns">
           <button type="submit" class="form__button button">отправить заявку</button>
           <p class="form__comment">* — Обязательные поля</p>
         </div>
