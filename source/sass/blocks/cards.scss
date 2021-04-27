@@ -10,6 +10,11 @@
     column-gap: 60px;
     row-gap: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .cards__item {

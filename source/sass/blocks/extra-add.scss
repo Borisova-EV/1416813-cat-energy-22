@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     border: 1px solid $special-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .extra-add__item {
@@ -24,8 +29,20 @@
     border-bottom: 1px solid $special-grey;
   }
 
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+  }
+
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -63,4 +80,8 @@
 .extra-add__link {
   grid-column: 1/-1;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/-1;
+  }
 }

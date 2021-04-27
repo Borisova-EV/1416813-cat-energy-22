@@ -4,6 +4,12 @@
   @media (min-width: $tablet-width) {
     border-top: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .extra__title {
@@ -24,6 +30,11 @@
     line-height: 36px;
   }
 
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    padding-left: 0;
+  }
+
   &::after {
     @include pseudo-element(100vh, 0);
     z-index: -1;
@@ -36,9 +47,14 @@
       content: "";
       position: absolute;
       left: -30px;
-      top: 70%;
+      top: 50%;
       width: 60px;
       border-bottom: 2px solid $green;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -110px;
+      width: 80px;
     }
   }
 }
@@ -52,5 +68,16 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/4;
+    margin-bottom: 0;
+  }
+}
+
+.extra__promotion {
+  @media (min-width: $desktop-width) {
+    grid-column: 4/-1;
   }
 }

@@ -15,6 +15,14 @@
     background-position: center;
   }
 
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -44,5 +52,9 @@
   @media (min-width: $tablet-width) {
     position: static;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
