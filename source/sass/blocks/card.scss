@@ -18,10 +18,10 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
 
-    & br {
-      display: none;
-    }
+  @media (min-width: $desktop-width) {
+    min-width: 174px;
   }
 
   &--all {
@@ -32,6 +32,20 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 23px;
     }
+  }
+}
+
+.card__break-1 {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.card__break-2 {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 
@@ -84,6 +98,8 @@
 
 .card__table {
   & tr {
-    border-bottom: 1px solid $special-grey;
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid $special-grey;
+    }
   }
 }

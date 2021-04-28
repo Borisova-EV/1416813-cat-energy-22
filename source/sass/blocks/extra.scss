@@ -48,13 +48,13 @@
       position: absolute;
       left: -30px;
       top: 50%;
-      width: 60px;
+      width: 100vw;
+      z-index: -1;
       border-bottom: 2px solid $green;
     }
 
     @media (min-width: $desktop-width) {
       left: -110px;
-      width: 80px;
     }
   }
 }
