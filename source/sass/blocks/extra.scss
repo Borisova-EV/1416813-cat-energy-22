@@ -1,5 +1,15 @@
 .extra {
   border-top: 1px solid $grey-button-hover;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .extra__title {
@@ -12,11 +22,40 @@
   @include oswald(24px, 24px);
   font-weight: normal;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding-left: 69px;
+    padding-right: 39px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    padding-left: 0;
+  }
+
   &::after {
     @include pseudo-element(100vh, 0);
     z-index: -1;
     top: 50%;
     border-bottom: 2px solid $green;
+  }
+  //green line
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      width: 100vw;
+      z-index: -1;
+      border-bottom: 2px solid $green;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -110px;
+    }
   }
 }
 
@@ -25,4 +64,20 @@
   margin-bottom: 38px;
   padding-left: 0;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/4;
+    margin-bottom: 0;
+  }
+}
+
+.extra__promotion {
+  @media (min-width: $desktop-width) {
+    grid-column: 4/-1;
+  }
 }
