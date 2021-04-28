@@ -97,6 +97,8 @@
 }
 
 .card__table {
+  border-collapse: collapse;
+
   & tr {
     @media (min-width: $tablet-width) {
       border-bottom: 1px solid $special-grey;
