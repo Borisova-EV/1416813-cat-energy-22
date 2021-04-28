@@ -1,6 +1,12 @@
 .main-navigation__list {
   position: relative;
 
+  @media (max-width: $mobile-width-only) {
+    .main-navigation--closed & {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -14,8 +20,47 @@
   height: 3%;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon/close-mobile-menu.png");
-  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    .main-navigation--closed & {
+      width: 24px;
+      height: 2px;
+      top: 0;
+      right: 0;
+      background-color: $black;
+      box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+    }
+
+    .main-navigation--opened & {
+      width: 25px;
+      height: 2px;
+      top: 10px;
+      right: 15px;
+      background-color: $black;
+      transform: rotate(45deg);
+    }
+  }
+
+  &::after {
+    .main-navigation--opened & {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      top: 10px;
+      right: 15px;
+      background-color: $black;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-navigation--nojs & {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
