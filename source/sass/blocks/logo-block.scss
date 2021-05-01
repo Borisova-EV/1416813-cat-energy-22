@@ -3,6 +3,10 @@
   align-items: center;
   height: 55px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -21,5 +25,9 @@
 .logo-block__icon {
   @media (min-width: $tablet-width) {
     margin-right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
   }
 }

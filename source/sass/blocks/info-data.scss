@@ -1,5 +1,19 @@
 .info-data {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 65px;
+    row-gap: 135px;
+    align-items: end;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .info-data__item {
@@ -9,7 +23,21 @@
   color: $dark-grey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 110px;
+    display: block;
+    width: 78%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    width: 100%;
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
   }
 
   &:not(:last-child) {
@@ -34,11 +62,19 @@
     @include pseudo-element(60px, 60px);
     position: static;
     display: block;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+      background-size: contain;
+    }
   }
 
   &--eco {
     &::before {
       background-image: url("../img/icon/eco-icon.svg");
+      background-repeat: no-repeat;
     }
   }
 

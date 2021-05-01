@@ -38,6 +38,14 @@
 .menu__link {
   color: $black;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+
+    &--current {
+      border-bottom: 2px solid $green;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &--contrast {
       color: $white;

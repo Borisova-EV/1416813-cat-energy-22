@@ -5,22 +5,13 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 71px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+  }
 }
 
 .info__list {
   margin: 0;
   padding-left: 0;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 128px;
-    row-gap: 135px;
-    margin-bottom: 72px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, auto);
-    column-gap: 94px;
-  }
 }

@@ -1,3 +1,9 @@
+.main-navigation {
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+  }
+}
+
 .main-navigation__list {
   position: relative;
 
