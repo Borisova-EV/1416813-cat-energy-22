@@ -3,7 +3,7 @@ let sliderButtonAfter = document.querySelector('.slider__button--after');
 let sliderRange = document.querySelector('.slider__range');
 let sliderContentBefore = document.querySelector('.slider__img--before');
 let sliderContentAfter = document.querySelector('.slider__img--after');
-let sliderContentMedium = document.querySelector('.slider__img--container');
+let sliderContentMedium = document.querySelector('.slider__img--medium');
 let smallDevice = window.matchMedia('(max-width: 767px)');
 
 
