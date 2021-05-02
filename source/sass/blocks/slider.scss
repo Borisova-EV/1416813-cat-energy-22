@@ -115,6 +115,7 @@
 
   &::-moz-range-track {
     @include range;
+    box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
       background-color: $special-grey;
@@ -131,6 +132,7 @@
 
   &::-moz-range-thumb {
     @include thumb;
+    box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
       margin-top: -15px;
