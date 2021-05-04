@@ -9,15 +9,20 @@
   text-transform: uppercase;
   background-color: $green;
 
+  .form-main & {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 38%;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
-
-    .form-main & {
-      width: 100%;
-    }
   }
 
   @media (min-width: $desktop-width) {
