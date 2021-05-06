@@ -49,10 +49,6 @@
   @media (min-width: $desktop-width) {
     &--contrast {
       color: $white;
-
-      &:visited {
-        color: $white;
-      }
     }
   }
 
@@ -66,5 +62,9 @@
 
   &:visited {
     color: $black;
+
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
   }
 }

@@ -4,9 +4,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 65px;
-    row-gap: 135px;
-    align-items: end;
+    column-gap: 60px;
+    row-gap: 134px;
     margin-bottom: 72px;
   }
 
@@ -21,23 +20,20 @@
   grid-template-columns: auto auto;
   column-gap: 20px;
   color: $dark-grey;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    width: 78%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     height: 100%;
     width: 100%;
-  }
-
-  & br {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: inline;
-    }
   }
 
   &:not(:last-child) {
@@ -48,33 +44,25 @@
     }
   }
 
-  &:nth-child(even) {
-    @media (min-width: $tablet-width) {
-      margin-right: 90px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-right: 0;
-    }
-  }
-
+  // icon
   &::before {
     @include pseudo-element(60px, 60px);
     position: static;
     display: block;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
       margin-bottom: 31px;
       background-size: contain;
+      align-self: start;
     }
   }
 
   &--eco {
     &::before {
       background-image: url("../img/icon/eco-icon.svg");
-      background-repeat: no-repeat;
     }
   }
 
@@ -93,6 +81,44 @@
   &--time {
     &::before {
       background-image: url("../img/icon/time-icon.svg");
+    }
+  }
+
+  //background-number
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "1";
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      right: 7%;
+
+      @include oswald (280px, 280px);
+      color: $basic-grey;
+    }
+  }
+
+  &:nth-child(2) {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "2";
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "3";
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "4";
+      }
     }
   }
 }
