@@ -6,9 +6,12 @@ let sliderContentAfter = document.querySelector('.slider__img--after');
 let sliderContentMedium = document.querySelector('.slider__img--medium');
 let smallDevice = window.matchMedia('(max-width: 767px)');
 
-smallDevice.addEventListener(smallDeviceChangeHandler);
-function smallDeviceChangeHandler(evt) {
-  if (evt.matches) {
+function sliderControl(smallDevice) {
+  if (smallDevice.matches) {
+    sliderRange.setAttribute('max', '2');
+    sliderContentMedium.classList.remove('slider__img--display');
+    sliderRange.value = 1;
+
     sliderButtonAfter.addEventListener('click', function () {
       sliderContentBefore.classList.remove('slider__img--display');
       sliderContentAfter.classList.add('slider__img--display');
@@ -32,8 +35,7 @@ function smallDeviceChangeHandler(evt) {
     });
   } else {
     sliderRange.setAttribute('max', '3');
-    sliderContentBefore.classList.remove('slider__img--display');
-    sliderContentMedium.classList.add('slider__img--display');
+    sliderRange.value = 2;
 
     sliderButtonAfter.addEventListener('click', function () {
       sliderContentBefore.classList.remove('slider__img--display');
@@ -50,11 +52,11 @@ function smallDeviceChangeHandler(evt) {
     });
 
     sliderRange.addEventListener('change', function () {
-      if (sliderRange.value === 3) {
+      if (sliderRange.value == 3) {
         sliderContentBefore.classList.remove('slider__img--display');
         sliderContentMedium.classList.remove('slider__img--display');
         sliderContentAfter.classList.add('slider__img--display');
-      } else if (sliderRange.value === 2) {
+      } else if (sliderRange.value == 2) {
         sliderContentAfter.classList.remove('slider__img--display');
         sliderContentBefore.classList.remove('slider__img--display');
         sliderContentMedium.classList.add('slider__img--display');
@@ -66,3 +68,5 @@ function smallDeviceChangeHandler(evt) {
     });
   }
 };
+sliderControl (smallDevice);
+smallDevice.addListener(sliderControl);
