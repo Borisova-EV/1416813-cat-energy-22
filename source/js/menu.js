@@ -11,5 +11,4 @@ buttonMenu.addEventListener('click', function () {
   } else {
     buttonMenu.setAttribute('aria-label', 'Открыть меню');
   }
-  }
-);
+});
