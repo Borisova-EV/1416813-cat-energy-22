@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 77px;
     padding-left: 53px;
-    padding-right: 280px;
+    padding-right: 39%;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,7 @@
 
   &:nth-child(2) {
     @media (min-width: $tablet-width) {
-      padding-right: 323px;
+      padding-right: 44%;
     }
 
     @media (min-width: $desktop-width) {

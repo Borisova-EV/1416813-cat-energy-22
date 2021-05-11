@@ -31,7 +31,8 @@
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    padding-right: 6px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,12 +47,13 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    column-gap: 42px;
+    width: 52%;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
 }
 
@@ -101,10 +103,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 38px;
+    padding-top: 65px;
     padding-left: 110px;
     margin-bottom: 0;
-    margin-right: 174px;
+    margin-right: 100px;
     padding-right: 0;
     width: 38%;
   }
@@ -112,12 +114,11 @@
 
 .example__slider {
   @media (min-width: $tablet-width) {
-    padding-bottom: 73px;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
-    padding-right: 110px;
     width: 50%;
   }
 }

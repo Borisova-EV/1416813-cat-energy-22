@@ -1,8 +1,14 @@
 .slider__content {
-  margin-bottom: 30px;
+  margin: 0 auto 23px;
+  height: 240px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 5px;
+    margin-bottom: 23px;
+    height: 521px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
@@ -11,19 +17,23 @@
 
   &--display {
     display: block;
-    height: 232px;
+    width: 311px;
+    height: 240px;
     margin: 0 auto;
-    object-fit: cover;
+    object-fit: contain;
 
     @media (min-width: $tablet-width) {
+      width: 100%;
       height: 521px;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 0 55px;
-      width: 460px;
-      height: 480px;
+      height: 536px;
     }
+  }
+
+  &--before {
+    margin-bottom: 30px;
   }
 }
 
@@ -32,14 +42,15 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 75px;
+    padding-left: 86px;
     align-items: center;
-    width: 90%;
+    padding-right: 86px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding-left: 35px;
+    padding-left: 100px;
+    padding-right: 40px;
     width: 100%;
   }
 }
@@ -57,7 +68,11 @@
   }
 
   &--before {
-    margin-right: 8px;
+    margin-right: 14px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 20px;
+    }
   }
 
   &--after {
@@ -74,7 +89,7 @@
 }
 
 .slider__range {
-  margin-right: 5px;
+  margin-right: 14px;
   width: 30%;
   height: 100%;
   appearance: none;
@@ -86,7 +101,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 11px;
+    margin-right: 20px;
     width: 85%;
   }
 
@@ -100,6 +115,7 @@
 
   &::-moz-range-track {
     @include range;
+    box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
       background-color: $special-grey;
@@ -116,6 +132,7 @@
 
   &::-moz-range-thumb {
     @include thumb;
+    box-sizing: border-box;
 
     @media (min-width: $tablet-width) {
       margin-top: -15px;

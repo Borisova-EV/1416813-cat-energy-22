@@ -1,10 +1,6 @@
 .contact {
   display: flex;
   justify-content: space-between;
-
-  @media (min-width: $desktop-width) {
-    justify-content: space-around;
-  }
 }
 
 .contact__invite {
@@ -19,6 +15,10 @@
     width: 30%;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 38%;
   }
 }
 
@@ -45,6 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 40%;
     text-align: start;
   }
 }

@@ -1,5 +1,18 @@
 .info-data {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 134px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .info-data__item {
@@ -7,9 +20,20 @@
   grid-template-columns: auto auto;
   column-gap: 20px;
   color: $dark-grey;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 110px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 
   &:not(:last-child) {
@@ -20,20 +44,20 @@
     }
   }
 
-  &:nth-child(even) {
-    @media (min-width: $tablet-width) {
-      margin-right: 90px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-right: 0;
-    }
-  }
-
+  // icon
   &::before {
     @include pseudo-element(60px, 60px);
     position: static;
     display: block;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+      background-size: contain;
+      align-self: start;
+    }
   }
 
   &--eco {
@@ -57,6 +81,44 @@
   &--time {
     &::before {
       background-image: url("../img/icon/time-icon.svg");
+    }
+  }
+
+  //background-number
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "1";
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      right: 7%;
+
+      @include oswald (280px, 280px);
+      color: $basic-grey;
+    }
+  }
+
+  &:nth-child(2) {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "2";
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "3";
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "4";
+      }
     }
   }
 }

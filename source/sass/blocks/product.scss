@@ -2,23 +2,78 @@
   position: relative;
   background-color: $basic-grey;
 
+  &::before {
+    @include pseudo-element(50px, 50px);
+    top: 24px;
+    left: 22px;
+    border-radius: 50%;
+    background-color: $green;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 90px;
+      left: auto;
+      right: 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 43px;
+      left: 52px;
+    }
+  }
+
   &--slim {
-    &::before {
-      @include pseudo-element(50px, 53px);
+    &::after {
+      @include pseudo-element(36px, 50px);
       top: 21px;
-      left: 22px;
-      background-image: url("../img/icon/slim-icon.png");
+      left: 29px;
+      background-image: url("../img/icon/slim-icon.svg");
       background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 140px;
+        height: 192px;
+        background-size: contain;
+        top: 84px;
+        left: auto;
+        right: 93px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 70px;
+        height: 97px;
+        top: 40px;
+        left: 66px;
+      }
     }
   }
 
   &--pro {
-    &::before {
-      @include pseudo-element(67px, 50px);
-      top: 24px;
+    &::after {
+      @include pseudo-element(67px, 28px);
+      top: 35px;
       left: 14px;
-      background-image: url("../img/icon/pro-icon.png");
+      background-image: url("../img/icon/pro-icon.svg");
       background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 268px;
+        height: 112px;
+        background-size: contain;
+        top: 135px;
+        left: auto;
+        right: 30px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 56px;
+        top: 67px;
+        left: 35px;
+      }
     }
   }
 }
@@ -68,8 +123,8 @@
 }
 
 .product__link {
-  position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
@@ -89,9 +144,21 @@
 
   &::after {
     @include pseudo-element(24px, 12px);
-    top: 20px;
-    left: 100px;
+    position: static;
+    display: block;
+    margin-left: 15px;
     background-image: url("../img/icon/arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+  }
+
+  &:hover::after {
+    width: 32px;
+    background-size: cover;
   }
 
   &:active {
