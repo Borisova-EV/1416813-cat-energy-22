@@ -53,6 +53,7 @@
     padding-bottom: 19px;
     border-top: 1px solid $grey;
     border-bottom: 1px solid $grey;
+    margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {
       padding-left: 70px;
@@ -66,7 +67,7 @@
       padding-left: 0;
       padding-top: 3px;
       padding-right: 110px;
-      margin-bottom: 25px;
+      margin-bottom: 28px;
     }
   }
   //grid desktop
@@ -156,7 +157,7 @@
 }
 
 .form__label {
-  margin-right: 18px;
+  margin-right: 12px;
 
   @media (min-width: $tablet-width) {
     margin-right: 19px;
@@ -166,7 +167,7 @@
 .form__input {
   flex-grow: 1;
   margin: 0;
-  padding-left: 15px;
+  padding-left: 17px;
   min-height: 46px;
   border-color: $special-light-grey;
   border-style: solid;
@@ -214,6 +215,10 @@
     @media (min-width: $tablet-width) {
       min-height: 174px;
     }
+  }
+
+  &::-moz-placeholder {
+    opacity: 1;
   }
 }
 
