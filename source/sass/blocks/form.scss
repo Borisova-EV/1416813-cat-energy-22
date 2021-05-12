@@ -17,7 +17,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
+    margin-bottom: 52px;
 
     &:nth-child(4) {
       margin-bottom: 56px;
@@ -32,12 +32,20 @@
     margin-bottom: 29px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 50px;
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 62px;
     }
   }
 
   &:first-child {
     margin-bottom: 23px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
   &--border {
@@ -50,13 +58,15 @@
       padding-left: 70px;
       padding-right: 70px;
       border: none;
-      padding-top: 50px;
+      padding-top: 53px;
+      margin-bottom: 35px;
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
       padding-top: 3px;
       padding-right: 110px;
+      margin-bottom: 25px;
     }
   }
   //grid desktop
@@ -78,7 +88,7 @@
     padding-right: 70px;
 
     .form__section--border & {
-      padding: 19px 27px;
+      padding: 20px 27px;
       border: 1px solid $grey;
     }
   }
@@ -109,7 +119,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 18px;
+    margin-bottom: 19px;
+
+    .form__section--border & {
+      margin-bottom: 13px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -120,6 +134,12 @@
 
   &--icon {
     position: relative;
+  }
+
+  .checkbox & {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -137,10 +157,9 @@
 
 .form__label {
   margin-right: 18px;
-  height: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-right: 25px;
+    margin-right: 19px;
   }
 }
 
@@ -153,7 +172,7 @@
   border-style: solid;
 
   @media (min-width: $tablet-width) {
-    padding-left: 19px;
+    padding-left: 16px;
     min-height: 52px;
   }
 
@@ -217,7 +236,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 70px;
-    padding-top: 13px;
+    padding-top: 15px;
     margin-bottom: 72px;
     font-size: 36px;
     line-height: 36px;
@@ -246,7 +265,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   .form__section:last-of-type & {
