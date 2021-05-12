@@ -1,5 +1,5 @@
 .catalog-main {
-  padding-top: 27px;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -29,7 +29,7 @@
 }
 
 .catalog-main__catalog {
-  @include section(32px);
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
@@ -44,8 +44,8 @@
 }
 
 .catalog-main__extra {
-  @include section(35px);
-  padding-top: 8px;
+  @include section(36px);
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     padding-right: 30px;

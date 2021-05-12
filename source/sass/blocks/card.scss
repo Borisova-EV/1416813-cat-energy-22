@@ -1,9 +1,46 @@
 .card {
-  border-top: 1px solid $grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr min-content;
+  row-gap: 11px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    border-top: none;
-    background-image: linear-gradient(to bottom, $white, white 16%, $basic-grey 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  &--all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0;
+    padding-top: 38px;
+
+    &::before {
+      content: "";
+      position: relative;
+      width: 30px;
+      height: 2px;
+      background-color: $grey-medium;
+      margin-bottom: 37px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: $grey-medium;
+      transform: rotate(90deg);
+    }
   }
 }
 
@@ -26,7 +63,7 @@
 
   &--all {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
     color: $special-black;
 
     @media (min-width: $tablet-width) {
@@ -62,7 +99,7 @@
 
 .card__text {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: auto;
@@ -103,5 +140,9 @@
     @media (min-width: $tablet-width) {
       border-bottom: 1px solid $special-grey;
     }
+  }
+
+  & td {
+    padding: 0;
   }
 }
