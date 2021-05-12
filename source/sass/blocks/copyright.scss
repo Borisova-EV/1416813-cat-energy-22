@@ -22,6 +22,10 @@
     color: $dark-grey;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+
   &:active {
     color: $black;
     opacity: 0.3;
