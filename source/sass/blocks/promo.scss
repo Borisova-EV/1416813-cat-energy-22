@@ -50,8 +50,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1440px;
     padding-left: 185px;
-    padding-right: 24%;
     padding-top: 83px;
   }
 }
@@ -69,7 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 419px;
   }
 }
 
