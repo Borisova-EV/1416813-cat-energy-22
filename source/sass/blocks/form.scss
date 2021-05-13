@@ -1,4 +1,6 @@
 .form {
+  overflow: hidden;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -219,6 +221,19 @@
 
   &::-moz-placeholder {
     opacity: 1;
+  }
+  //Убирает стрелки для input number
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"],
+  &[type="number"]:hover,
+  &[type="number"]:focus {
+    appearance: textfield;
+    width: 100%;
   }
 }
 
