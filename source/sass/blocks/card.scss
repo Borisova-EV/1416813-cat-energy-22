@@ -18,6 +18,10 @@
     row-gap: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
+  }
+
   &--all {
     display: flex;
     flex-direction: column;
@@ -121,6 +125,11 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .card__link {
@@ -135,6 +144,10 @@
     width: 161px;
     height: 172px;
     margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
   }
 
   &--large {

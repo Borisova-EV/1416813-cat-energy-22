@@ -9,6 +9,7 @@
   @media (min-width: $desktop-width) {
     border-left: none;
     border-right: none;
+    border-bottom: none;
   }
 }
 
@@ -29,11 +30,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 80px;
+    grid-template-columns: 27% 46% 27%;
     padding-left: 0;
     padding-right: 0;
     align-items: center;
+    padding-top: 16px;
+    padding-bottom: 17px;
   }
 
   &:not(:last-child) {
@@ -79,6 +81,18 @@
 
     & dd {
       margin-left: 52px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 85px;
+    padding-right: 38px;
+    padding-top: 6px;
+    justify-content: space-between;
+
+    & dd {
+      margin-left: 0;
+      min-width: 43px;
     }
   }
 }
