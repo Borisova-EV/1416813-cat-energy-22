@@ -40,45 +40,47 @@
           программу питания для вашего кота</p>
       </div>
       <form action="https://echo.htmlacademy.ru" method="POST" class="program__form form">
-        <fieldset class="form__section">
-          <legend class="visually-hidden">Ваш кот</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__label" for="name-cat">ИМЯ:*</label>
-              <input type="text" name="name" id="name-cat" class="form__input" placeholder="барсик" required>
-            </li>
-            <li class="form__item">
-              <label class="form__label" for="weight-cat">Вес&nbsp(кг):*</label>
-              <input type="number" name="weight" id="weight-cat" class="form__input" placeholder="7" required>
-            </li>
-            <li class="form__item">
-              <label class="form__label" for="age-cat">Возраст&nbsp(лет):</label>
-              <input type="number" name="age" id="age-cat" class="form__input" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__section  form__section--border">
-          <legend class="visually-hidden">Ваша цель</legend>
-          <ul class="form__list">
-            <li class="form__item form__item--choice choice">
-              <input type="radio" name="target" id="target-slim"
-                class="form__input form__input--choice choice__input choice__input--radio" checked>
-              <label class="form__label choice__label" for="target-slim">похудение</label>
-            </li>
-            <li class="form__item form__item--choice  choice">
-              <input type="radio" name="target" id="target-weight"
-                class="form__input form__input--choice choice__input choice__input--radio">
-              <label class="form__label choice__label" for="target-weight">Набор массы</label>
-            </li>
-            <li class="form__item form__item--choice choice">
-              <input type="radio" name="target" id="target-unknown"
-                class="form__input  form__input--choice  choice__input choice__input--radio">
-              <label class="form__label choice__label" for="target-unknown">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__section">
-          <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
+        <div class="form__grid">
+          <fieldset class="form__section">
+            <legend class="visually-hidden">Ваш кот</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="name-cat">ИМЯ:*</label>
+                <input type="text" name="name" id="name-cat" class="form__input" placeholder="барсик" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="weight-cat">Вес&nbsp(кг):*</label>
+                <input type="number" name="weight" id="weight-cat" class="form__input" placeholder="7" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="age-cat">Возраст&nbsp(лет):</label>
+                <input type="number" name="age" id="age-cat" class="form__input" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__section  form__section--border">
+            <legend class="visually-hidden">Ваша цель</legend>
+            <ul class="form__list">
+              <li class="form__item form__item--choice choice">
+                <input type="radio" name="target" id="target-slim"
+                  class="form__input form__input--choice choice__input choice__input--radio" checked>
+                <label class="form__label choice__label" for="target-slim">похудение</label>
+              </li>
+              <li class="form__item form__item--choice  choice">
+                <input type="radio" name="target" id="target-weight"
+                  class="form__input form__input--choice choice__input choice__input--radio">
+                <label class="form__label choice__label" for="target-weight">Набор массы</label>
+              </li>
+              <li class="form__item form__item--choice choice">
+                <input type="radio" name="target" id="target-unknown"
+                  class="form__input  form__input--choice  choice__input choice__input--radio">
+                <label class="form__label choice__label" for="target-unknown">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="form__section form__section--legend">
+          <legend class="form__legend"><span>Контактные данные<br>(владельца кота)</span></legend>
           <ul class="form__list form__list--columns">
             <li class="form__item form__item--icon">
               <label class="form__label" for="email-owner">E-mail:*</label>
@@ -115,17 +117,17 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__section">
-          <legend class="form__legend">Комментарий</legend>
+        <fieldset class="form__section form__section--legend  form__section--textarea">
+          <legend class="form__legend"><span>Комментарий</span></legend>
           <label class="visually-hidden" for="comments">Напишите ваш комментарий</label>
           <div class="form__wrapper">
             <textarea class="form__input form__input--textarea" placeholder="Расскажите обо всех повадках кота"
               id="comments"></textarea>
           </div>
         </fieldset>
-        <fieldset class="form__section">
-          <legend class="form__legend">Дополнительно</legend>
-          <ul class="form__list checkbox">
+        <fieldset class="form__section form__section--legend">
+          <legend class="form__legend"><span>Дополнительно</span></legend>
+          <ul class="form__list form__list--checkbox checkbox">
             <li class="form__item form__item--choice choice">
               <input type="checkbox" class="form__input form__input--choice choice__input choice__input--checkbox"
                 name="sweetener" id="add-sweetener" checked>

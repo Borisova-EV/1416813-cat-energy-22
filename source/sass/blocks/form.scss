@@ -1,16 +1,25 @@
 .form {
   overflow: hidden;
+}
+
+.form__grid {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     max-width: 1440px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 68px;
   }
 }
 
 .form__section {
+  position: relative;
   margin-bottom: 19px;
   margin-left: 0;
   margin-right: 0;
@@ -22,25 +31,19 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
-
-    &:nth-child(4) {
-      margin-bottom: 56px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
   }
 
-  &:last-of-type {
-    margin-bottom: 29px;
-
+  &:nth-child(4) {
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 52px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 62px;
+      margin-bottom: 61px;
     }
   }
 
@@ -74,11 +77,34 @@
       margin-bottom: 0;
       padding-bottom: 0;
     }
+
+    .form__grid & {
+      @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+      }
+    }
   }
-  //grid desktop
-  @media (min-width: $desktop-width) {
-    &:nth-child(n+3) {
-      grid-column: 1/-1;
+  //green line
+  &--legend {
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        width: 100vw;
+        border-top: 2px solid $green;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 50px;
     }
   }
 }
@@ -92,31 +118,54 @@
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
-
-    .form__section--border & {
-      padding: 20px 27px;
-      border: 1px solid $grey;
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .form__section:first-child & {
-      padding-right: 0;
+  .form__section--border & {
+    @media (min-width: $tablet-width) {
+      padding: 23px 27px 23px;
+      border: 1px solid $grey;
     }
 
-    &--columns {
+    @media (min-width: $desktop-width) {
+      padding-top: 25px;
+      height: 100%;
+      padding-bottom: 0;
+    }
+  }
+
+  .form__section:first-child & {
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
+    }
+  }
+
+  &--columns {
+    @media (min-width: $tablet-width) {
+      padding-top: 59px;
+    }
+
+    @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 80px;
       padding-right: 110px;
     }
+  }
 
-    .form__section--border & {
-      padding-top: 25px;
-      height: 100%;
-      padding-bottom: 0;
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      padding-top: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 37px;
     }
   }
 }
@@ -126,20 +175,23 @@
   align-items: center;
   margin-bottom: 13px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 19px;
-
-    .form__section--border & {
+  .form__section--border &:not(:last-child) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 13px;
+      padding-bottom: 0;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    .form__list--columns & {
+  .form__list--columns & {
+    @media (min-width: $desktop-width) {
       margin-bottom: 0;
     }
   }
@@ -255,7 +307,6 @@
 }
 
 .form__legend {
-  position: relative;
   margin-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
@@ -265,61 +316,56 @@
   @include oswald (24px, 26px);
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
+    padding-left: 31px;
     padding-top: 15px;
-    margin-bottom: 72px;
+    margin-bottom: 15px;
     font-size: 36px;
     line-height: 36px;
+  }
 
-    .form__section:last-of-type & {
+  @media (min-width: $desktop-width) {
+    padding-left: 71px;
+    padding-right: 110px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__section:last-of-type & {
+    @media (min-width: $tablet-width) {
       padding-top: 0;
     }
+  }
 
-    & br {
+  & br {
+    @media (min-width: $tablet-width) {
       display: none;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 70%;
-      width: 30px;
-      border-bottom: 2px solid $green;
-
-      @media (min-width: $desktop-width) {
-        width: 100vw;
-        left: 100vw;
-        z-index: -1;
-      }
     }
   }
 
   .form__section:nth-of-type(3) & {
     @media (min-width: $desktop-width) {
-      padding-top: 70px;
+      padding-top: 15px;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    margin-bottom: 75px;
-  }
-
-  .form__section:last-of-type & {
-    margin-bottom: 15px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 45%;
-    width: 100vw;
-    border-top: 2px solid $green;
-
+  & span {
     @media (min-width: $tablet-width) {
-      top: 80%;
+      display: block;
+      background-color: $white;
+      width: max-content;
+      z-index: 5;
+      position: relative;
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+  }
+
+  .form__section--legend & {
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
     }
   }
 }
@@ -345,21 +391,32 @@
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
-
-    &--columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 60px;
-    }
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+  }
 
-    &--columns {
+  &--columns {
+    padding-top: 10px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
+      padding-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
       grid-column: 1/-1;
       column-gap: 80px;
+      padding-top: 0;
     }
   }
 }
