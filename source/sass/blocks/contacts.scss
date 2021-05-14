@@ -2,9 +2,17 @@
   &--grey {
     background-color: $basic-grey;
   }
+}
 
+.contacts__wrapper {
   @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -21,8 +29,6 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
-    left: 110px;
     margin-bottom: 0;
     padding-top: 66px;
     padding-bottom: 51px;
@@ -30,6 +36,10 @@
     padding-right: 89px;
     width: 40%;
     background-color: $white;
+    top: 95px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
   }
 }
 
