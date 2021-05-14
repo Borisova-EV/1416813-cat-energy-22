@@ -12,10 +12,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 57px;
     padding-bottom: 60px;
     height: 200px;
+    padding-left: 79px;
+    padding-right: 117px;
+    background-position-y: -350px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +53,8 @@
 
   @media (min-width: $tablet-width) {
     text-align: start;
+    width: 33%;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
