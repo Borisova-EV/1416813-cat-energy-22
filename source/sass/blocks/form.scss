@@ -131,7 +131,7 @@
   .form__section--border & {
     @media (min-width: $tablet-width) {
       padding: 23px 27px 23px;
-      border: 1px solid $grey;
+      border: 1px solid $special-light-grey;
     }
 
     @media (min-width: $desktop-width) {
