@@ -365,8 +365,20 @@
   }
 
   .form__section--legend & {
+    position: relative;
+
     @media (min-width: $tablet-width) {
       padding-top: 0;
+      position: static;
+    }
+
+    &::after {
+      @media (max-width: $mobile-width-only) {
+        @include pseudo-element(100vh, 0);
+        z-index: -1;
+        top: 50%;
+        border-top: 2px solid $green;
+      }
     }
   }
 }
