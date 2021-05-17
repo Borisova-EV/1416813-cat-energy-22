@@ -10,16 +10,6 @@
   background-color: $green;
   border: none;
 
-  .form-main & {
-    font-size: 16px;
-    line-height: 20px;
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      font-size: 20px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: 38%;
     height: 54px;
@@ -28,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 244px;
+    width: 28%;
   }
 
   &:hover {
@@ -42,6 +32,25 @@
 
   &:visited {
     color: $white;
+  }
+
+  .form-main & {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+
+  .catalog-main & {
+    @media (min-width: $tablet-width) {
+      height: 39px;
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 10px;
+    }
   }
   // grey button
   &--link-show {
