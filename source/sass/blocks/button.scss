@@ -10,36 +10,6 @@
   background-color: $green;
   border: none;
 
-  @media (min-width: $tablet-width) {
-    width: 38%;
-    height: 54px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 28%;
-  }
-
-  .form-main & {
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
-  }
-
-  .catalog-main & {
-    @media (min-width: $tablet-width) {
-      height: 39px;
-      font-size: 16px;
-      line-height: 20px;
-      padding-top: 10px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 244px;
-  }
-
   &:hover {
     background-color: $green-hover;
   }
@@ -51,6 +21,17 @@
 
   &:visited {
     color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 38%;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 28%;
   }
 
   .form-main & {
@@ -69,6 +50,10 @@
       font-size: 16px;
       line-height: 20px;
       padding-top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
     }
   }
   // grey button
