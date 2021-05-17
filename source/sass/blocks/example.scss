@@ -9,6 +9,7 @@
   @media (min-width: $desktop-width) {
     background-image: linear-gradient($white, $white 27%, $background-grey 27%);
     border: none;
+    background-size: cover;
   }
 }
 
@@ -120,5 +121,14 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
     width: 50%;
+  }
+}
+
+.example__centering {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }

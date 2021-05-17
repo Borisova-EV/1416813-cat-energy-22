@@ -46,12 +46,6 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
-    &--contrast {
-      color: $white;
-    }
-  }
-
   &:hover {
     color: rgba($black, 0.6);
   }
@@ -62,9 +56,15 @@
 
   &:visited {
     color: $black;
+  }
 
+  &--contrast {
     @media (min-width: $desktop-width) {
       color: $white;
+
+      &:visited {
+        color: $white;
+      }
     }
   }
 }

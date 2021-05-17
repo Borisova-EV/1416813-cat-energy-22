@@ -8,20 +8,27 @@
   color: $white;
   text-transform: uppercase;
   background-color: $green;
+  border: none;
+
+  .form-main & {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 38%;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
-
-    .form-main & {
-      width: 100%;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 28%;
+    width: 244px;
   }
 
   &:hover {
