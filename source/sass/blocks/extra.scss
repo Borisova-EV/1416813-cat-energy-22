@@ -22,6 +22,7 @@
   margin-bottom: 34px;
   padding-right: 22px;
   width: max-content;
+  overflow: hidden;
   background-color: $white;
 
   @include oswald(24px, 24px);
@@ -46,7 +47,7 @@
     padding-right: 110px;
   }
 
-  & span {
+  span {
     @media (min-width: $tablet-width) {
       width: max-content;
       z-index: 5;

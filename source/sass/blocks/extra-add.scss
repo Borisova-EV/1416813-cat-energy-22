@@ -26,7 +26,6 @@
     padding-left: 36px;
     padding-right: 36px;
     border-top: none;
-    border-bottom: 1px solid $special-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,6 +42,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+      border-bottom: 1px solid $special-grey;
     }
   }
 }
