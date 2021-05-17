@@ -1,7 +1,6 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  height: 78px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -22,6 +21,10 @@
     color: $dark-grey;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+
   &:active {
     color: $black;
     opacity: 0.3;
@@ -31,6 +34,7 @@
     display: block;
     width: 27px;
     height: 34px;
+    margin-right: 0;
 
     &:hover {
       path {
