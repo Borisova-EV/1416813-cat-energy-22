@@ -1,16 +1,17 @@
 .catalog-main {
-  padding-top: 27px;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 73px;
+    padding-top: 62px;
   }
 }
 
 .catalog-main__title {
+  width: 100%;
   margin-bottom: 41px;
   padding-left: 20px;
   padding-right: 20px;
@@ -18,44 +19,50 @@
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 135px;
+    margin-bottom: 105px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 84px;
+    max-width: 1440px;
+    margin: 0 auto 100px auto;
   }
 }
 
 .catalog-main__catalog {
-  @include section(32px);
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 76px;
+    margin-bottom: 40px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .catalog-main__extra {
-  @include section(35px);
-  padding-top: 8px;
+  @include section(36px);
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 0;
+    padding-left: 0;
     margin-bottom: 76px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
-    margin-bottom: 86px;
+    margin-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

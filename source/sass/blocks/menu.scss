@@ -46,6 +46,16 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    &--contrast {
+      color: $white;
+
+      &:visited {
+        color: $white;
+      }
+    }
+  }
+
   &:hover {
     color: rgba($black, 0.6);
   }

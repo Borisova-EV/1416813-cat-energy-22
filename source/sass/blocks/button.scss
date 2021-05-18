@@ -10,27 +10,6 @@
   background-color: $green;
   border: none;
 
-  .form-main & {
-    font-size: 16px;
-    line-height: 20px;
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      font-size: 20px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 38%;
-    height: 54px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 244px;
-  }
-
   &:hover {
     background-color: $green-hover;
   }
@@ -43,6 +22,50 @@
   &:visited {
     color: $white;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 38%;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 28%;
+  }
+
+  .form-main & {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+
+  .catalog-main__catalog & {
+    @media (min-width: $desktop-width) {
+      width: 168px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+
+  .catalog-main__extra & {
+    @media (min-width: $tablet-width) {
+      height: 39px;
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+    }
+  }
+
+
   // grey button
   &--link-show {
     width: 100%;
@@ -63,5 +86,11 @@
       color: $dark-grey;
       background-color: $basic-grey;
     }
+  }
+
+  &--large-font {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
   }
 }
