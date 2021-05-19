@@ -43,6 +43,10 @@
   }
 
   .catalog-main__catalog & {
+    @media (min-width: $tablet-width) {
+      height: 39px;
+    }
+
     @media (min-width: $desktop-width) {
       width: 168px;
       height: 40px;
