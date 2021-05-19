@@ -1,3 +1,26 @@
+.slider {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+  }
+
+  &--medium {
+    @media (min-width: $desktop-width) {
+      position: relative;
+      z-index: 2;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        z-index: -1;
+        left: 55%;
+        background-image: linear-gradient(to bottom, $white, $white 27%, $background-grey 27%);
+      }
+    }
+  }
+}
+
 .slider__content {
   margin: 0 auto 23px;
   height: 240px;

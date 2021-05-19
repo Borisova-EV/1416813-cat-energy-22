@@ -4,6 +4,7 @@ let sliderRange = document.querySelector('.slider__range');
 let sliderContentBefore = document.querySelector('.slider__img--before');
 let sliderContentAfter = document.querySelector('.slider__img--after');
 let sliderContentMedium = document.querySelector('.slider__img--medium');
+let sliderBlockMedium = document.querySelector('.slider');
 let smallDevice = window.matchMedia('(max-width: 767px)');
 
 function sliderControl(smallDevice) {
@@ -45,11 +46,13 @@ function sliderControl(smallDevice) {
     sliderContentMedium.classList.add('slider__img--display');
     sliderContentAfter.classList.remove('slider__img--display');
     sliderContentBefore.classList.remove('slider__img--display');
+    sliderBlockMedium.classList.add('slider--medium');
 
     sliderButtonAfter.addEventListener('click', function () {
       sliderContentBefore.classList.remove('slider__img--display');
       sliderContentMedium.classList.remove('slider__img--display');
       sliderContentAfter.classList.add('slider__img--display');
+      sliderBlockMedium.classList.remove('slider--medium');
       sliderRange.value = 3;
     });
 
@@ -57,6 +60,7 @@ function sliderControl(smallDevice) {
       sliderContentAfter.classList.remove('slider__img--display');
       sliderContentMedium.classList.remove('slider__img--display');
       sliderContentBefore.classList.add('slider__img--display');
+      sliderBlockMedium.classList.remove('slider--medium');
       sliderRange.value = 1;
     });
 
@@ -65,14 +69,17 @@ function sliderControl(smallDevice) {
         sliderContentBefore.classList.remove('slider__img--display');
         sliderContentMedium.classList.remove('slider__img--display');
         sliderContentAfter.classList.add('slider__img--display');
+        sliderBlockMedium.classList.remove('slider--medium');
       } else if (sliderRange.value == 2) {
         sliderContentAfter.classList.remove('slider__img--display');
         sliderContentBefore.classList.remove('slider__img--display');
         sliderContentMedium.classList.add('slider__img--display');
+        sliderBlockMedium.classList.add('slider--medium');
       } else {
         sliderContentMedium.classList.remove('slider__img--display');
         sliderContentAfter.classList.remove('slider__img--display');
         sliderContentBefore.classList.add('slider__img--display');
+        sliderBlockMedium.classList.remove('slider--medium');
       }
     });
   }
