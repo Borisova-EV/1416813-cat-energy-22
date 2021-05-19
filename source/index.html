@@ -12,8 +12,12 @@
   <header class="page-header">
     <div class="page-header__logo logo-block">
       <a class="logo-block__icon">
-        <img src="img/logo/logo-icon.svg" width="34" height="38"
-          alt="Графический логотип интернет-магазина Cat Energy.">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo/logo-icon-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo/logo-icon-tablet.svg">
+          <img src="img/logo/logo-icon.svg" width="34" height="38"
+            alt="Графический логотип интернет-магазина Cat Energy.">
+        </picture>
       </a>
       <a class="logo-block__title logo">
         <img src="img/logo/logo-title.svg" width="101" height="18"
@@ -39,8 +43,12 @@
       <div class="promo__wrapper">
         <h2 class="promo__title title title--attention">Функциональное питание для котов</h2>
         <p class="promo__intro">Занялся собой? Займись котом!</p>
-        <img src="img/promo/promo-product.png" class="promo__img" width="280" height="270"
-          alt="Оранжевая баночка с питанием для котов Cat Energy Pro со вкусом курицы.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/promo/promo-product-desktop.png  1x, img/promo/promo-product-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/promo/promo-product-tablet.png  1x, img/promo/promo-product-tablet@2x.png 2x">
+          <img srcset="img/promo/promo-product.png 1x, img/promo/promo-product@2x.png 2x" class="promo__img" width="280" height="270"
+            alt="Оранжевая баночка с питанием для котов Cat Energy Pro со вкусом курицы.">
+        </picture>
         <a href="form.html" class="promo__button button"
           aria-label="Перейти на страницу Подбор программы интернет-магазина Cat Energy">подобрать программу</a>
       </div>
@@ -101,9 +109,18 @@
         </div>
         <div class="example__slider slider">
           <div class="slider__content">
-            <img src="img/cat/fat-cat.png" width="311" height="232" alt="Кот с избыточным весом." class="slider__img slider__img--display slider__img--before">
-            <img src="img/cat/slim-cat.png" width="311" height="240" alt="Худой кот." class="slider__img slider__img--after">
-            <img src="img/cat/cat-medium.png" width="354" height="522" alt="Половина кота с избыточным весом половина худого кота" class="slider__img slider__img--medium">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat/fat-cat-tablet.png 1x, img/cat/fat-cat-tablet@2x.png 2x">
+              <img srcset="img/cat/fat-cat.png 1x, img/cat/fat-cat@2x.png 2x" width="311" height="232" alt="Кот с избыточным весом." class="slider__img slider__img--display slider__img--before">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat/slim-cat-tablet.png 1x, img/cat/slim-cat-tablet@2x.png 2x">
+              <img srcset="img/cat/slim-cat.png 1x, img/cat/slim-cat@2x.png 2x" width="311" height="240" alt="Худой кот." class="slider__img slider__img--after">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/cat/cat-medium-desktop.png 1x, img/cat/cat-medium-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat/cat-medium-tablet.png 1x, img/cat/cat-medium-tablet@2x.png 2x">
+              <img srcset="img/cat/cat-medium.png 1x, img/cat/cat-medium@2x.png 2x" width="354" height="522" alt="Половина кота с избыточным весом половина худого кота" class="slider__img slider__img--medium"></picture>
           </div>
           <div class="slider__control">
             <button type="button" class="slider__button slider__button--before">было</button>
