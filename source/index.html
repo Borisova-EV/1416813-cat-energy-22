@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -12,8 +16,12 @@
   <header class="page-header">
     <div class="page-header__logo logo-block">
       <a class="logo-block__icon">
-        <img src="img/logo/logo-icon.svg" width="34" height="38"
-          alt="Графический логотип интернет-магазина Cat Energy.">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo/logo-icon-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo/logo-icon-tablet.svg">
+          <img src="img/logo/logo-icon.svg" width="34" height="38"
+            alt="Графический логотип интернет-магазина Cat Energy.">
+        </picture>
       </a>
       <a class="logo-block__title logo">
         <img src="img/logo/logo-title.svg" width="101" height="18"
@@ -39,8 +47,14 @@
       <div class="promo__wrapper">
         <h2 class="promo__title title title--attention">Функциональное питание для котов</h2>
         <p class="promo__intro">Занялся собой? Займись котом!</p>
-        <img src="img/promo/promo-product.png" class="promo__img" width="280" height="270"
-          alt="Оранжевая баночка с питанием для котов Cat Energy Pro со вкусом курицы.">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="img/promo/promo-product-desktop.png  1x, img/promo/promo-product-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/promo/promo-product-tablet.png  1x, img/promo/promo-product-tablet@2x.png 2x">
+          <img srcset="img/promo/promo-product.png 1x, img/promo/promo-product@2x.png 2x" class="promo__img" width="280"
+            height="270" alt="Оранжевая баночка с питанием для котов Cat Energy Pro со вкусом курицы.">
+        </picture>
         <a href="form.html" class="promo__button button"
           aria-label="Перейти на страницу Подбор программы интернет-магазина Cat Energy">подобрать программу</a>
       </div>
@@ -101,9 +115,26 @@
         </div>
         <div class="example__slider slider">
           <div class="slider__content">
-            <img src="img/cat/fat-cat.png" width="311" height="232" alt="Кот с избыточным весом." class="slider__img slider__img--display slider__img--before">
-            <img src="img/cat/slim-cat.png" width="311" height="240" alt="Худой кот." class="slider__img slider__img--after">
-            <img src="img/cat/cat-medium.png" width="354" height="522" alt="Половина кота с избыточным весом половина худого кота" class="slider__img slider__img--medium">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/cat/fat-cat-tablet.png 1x, img/cat/fat-cat-tablet@2x.png 2x">
+              <img srcset="img/cat/fat-cat.png 1x, img/cat/fat-cat@2x.png 2x" width="311" height="232"
+                alt="Кот с избыточным весом." class="slider__img slider__img--display slider__img--before">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/cat/slim-cat-tablet.png 1x, img/cat/slim-cat-tablet@2x.png 2x">
+              <img srcset="img/cat/slim-cat.png 1x, img/cat/slim-cat@2x.png 2x" width="311" height="240"
+                alt="Худой кот." class="slider__img slider__img--after">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="img/cat/cat-medium-desktop.png 1x, img/cat/cat-medium-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/cat/cat-medium-tablet.png 1x, img/cat/cat-medium-tablet@2x.png 2x">
+              <img srcset="img/cat/cat-medium.png 1x, img/cat/cat-medium@2x.png 2x" width="354" height="522"
+                alt="Половина кота с избыточным весом половина худого кота" class="slider__img slider__img--medium">
+            </picture>
           </div>
           <div class="slider__control">
             <button type="button" class="slider__button slider__button--before">было</button>
@@ -151,7 +182,8 @@
               <path
                 d="M7.98.06c1.34 0 2.43.02 3.27.05a6 6 0 011.92.37 3.99 3.99 0 012.31 2.32 6 6 0 01.38 1.92 91.88 91.88 0 010 6.53 6 6 0 01-.38 1.92 3.99 3.99 0 01-2.3 2.31 6 6 0 01-1.93.38 91.88 91.88 0 01-6.53 0 6 6 0 01-1.92-.38 3.99 3.99 0 01-2.32-2.3 6 6 0 01-.37-1.93 91.73 91.73 0 010-6.53A6 6 0 01.48 2.8 3.99 3.99 0 012.8.48 6 6 0 014.72.11C5.56.08 6.65.06 7.98.06zm0 1.03c-1.38 0-2.51.02-3.39.05-.56.02-1.08.12-1.56.3-.75.31-1.28.84-1.6 1.6-.17.47-.27 1-.29 1.55a98.83 98.83 0 000 6.79c.02.56.12 1.08.3 1.56.31.75.84 1.28 1.6 1.6.47.17 1 .27 1.55.29a98.66 98.66 0 006.79 0 5.01 5.01 0 001.56-.3 2.85 2.85 0 001.6-1.6c.17-.47.27-1 .29-1.55a98.66 98.66 0 000-6.79 5.01 5.01 0 00-.3-1.56 2.85 2.85 0 00-1.6-1.6c-.47-.17-1-.27-1.55-.29-.88-.03-2.01-.05-3.4-.05zm0 10.07c.88 0 1.63-.31 2.25-.93.62-.62.93-1.37.93-2.25 0-.87-.31-1.62-.93-2.24a3.06 3.06 0 00-2.25-.93c-.87 0-1.62.31-2.24.93a3.06 3.06 0 00-.93 2.24c0 .88.31 1.63.93 2.25.62.62 1.37.93 2.24.93zm0-7.24c1.13 0 2.09.4 2.88 1.19.8.8 1.19 1.75 1.19 2.87 0 1.13-.4 2.09-1.2 2.88-.78.8-1.74 1.19-2.87 1.19-1.12 0-2.08-.4-2.87-1.2a3.92 3.92 0 01-1.19-2.87c0-1.12.4-2.08 1.19-2.87.8-.8 1.75-1.19 2.87-1.19zm5.2-.15a.95.95 0 01-.97.94.9.9 0 01-.67-.28.9.9 0 01-.27-.66.95.95 0 01.93-.97c.26 0 .49.1.68.29.2.19.3.42.3.68z"
                 fill="#666" />
-            </svg></a>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href=""
@@ -160,7 +192,6 @@
               <path
                 d="M16.5 1.83325H13.75C12.5344 1.83325 11.3687 2.30674 10.5091 3.14957C9.64957 3.99239 9.16669 5.1355 9.16669 6.32743V9.02394H6.41669V12.6193H9.16669V19.81H12.8334V12.6193H15.5834L16.5 9.02394H12.8334V6.32743C12.8334 6.08905 12.9299 5.86042 13.1018 5.69186C13.2737 5.52329 13.5069 5.4286 13.75 5.4286H16.5V1.83325Z"
                 stroke="#666666" fill="666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
             </svg>
           </a>
         </li>
@@ -171,8 +202,10 @@
         <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
-            </svg>
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              fill="#666666" />
+          </svg>
         </a>
       </div>
     </div>

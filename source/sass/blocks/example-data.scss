@@ -43,11 +43,13 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -10px;
-    background-color: $background-grey;
+    background-color: $basic-grey;
     width: max-content;
   }
 }

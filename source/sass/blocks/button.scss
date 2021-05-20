@@ -24,14 +24,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 38%;
+    width: 244px;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 28%;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .form-main & {
