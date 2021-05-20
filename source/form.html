@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -12,8 +16,12 @@
   <header class="page-header">
     <div class="page-header__logo logo-block">
       <a class="logo-block__icon" href="index.html">
-        <img src="img/logo/logo-icon.svg" width="34" height="38"
-          alt="Переход на Главную страницу интернет-магазина Cat Energy.">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo/logo-icon-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo/logo-icon-tablet.svg">
+          <img src="img/logo/logo-icon.svg" width="34" height="38"
+            alt="Переход на Главную страницу интернет-магазина Cat Energy.">
+        </picture>
       </a>
       <a class="logo-block__title logo" href="index.html">
         <img src="img/logo/logo-title.svg" width="101" height="18"
