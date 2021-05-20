@@ -108,12 +108,20 @@
   @include oswald(16px, 20px);
   text-transform: uppercase;
   border: none;
-  border-bottom: 1px dotted rgba($black, 0.24);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     background-color: inherit;
+    border-bottom: 1px dotted rgba($black, 0.24);
+
+    &:hover {
+      border-bottom: 1px solid rgba($black, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   &--before {
@@ -126,14 +134,6 @@
 
   &--after {
     padding: 0;
-  }
-
-  &:hover {
-    border-bottom: 1px solid rgba($black, 0.4);
-  }
-
-  &:active {
-    border-bottom: none;
   }
 }
 
