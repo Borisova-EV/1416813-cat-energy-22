@@ -10,6 +10,10 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo/promo-catalog-background@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +22,11 @@
     height: 200px;
     padding-left: 79px;
     padding-right: 117px;
-    background-position-y: -350px;
+    background-image: url("../img/promo/promo-catalog-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/promo-catalog-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +38,11 @@
     padding-right: 0;
     padding-bottom: 45px;
     background-position: center;
+    background-image: url("../img/promo/promo-catalog-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/promo-catalog-background-desktop@2x.jpg");
+    }
   }
 
   &::before {

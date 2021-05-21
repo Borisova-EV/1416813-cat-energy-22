@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -12,8 +16,12 @@
   <header class="page-header">
     <div class="page-header__logo logo-block">
       <a class="logo-block__icon" href="index.html">
-        <img src="img/logo/logo-icon.svg" width="34" height="38"
-          alt="Переход на главную страницу интернет-магазина Cat Energy.">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo/logo-icon-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo/logo-icon-tablet.svg">
+          <img src="img/logo/logo-icon.svg" width="34" height="38"
+            alt="Переход на главную страницу интернет-магазина Cat Energy.">
+        </picture>
       </a>
       <a class="logo-block__title logo" href="index.html">
         <img src="img/logo/logo-title.svg" width="101" height="18"
@@ -43,8 +51,12 @@
               <h3 class="cards__title card__title">Cat Energy<br class="card__break-1"> PRO<br class="card__break-2"> 500
                 г
               </h3>
-              <img src="img/catalog/cat-energy-pro-chicken-500.png" width="68" height="86"
-                alt="Оранжевая баночка 500 грамм с отметкой 0% Natural, названием и вкусом." class="cards__img card__img">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/cat-energy-pro-chicken-500-desktop.png 1x, img/catalog/cat-energy-pro-chicken-500-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/cat-energy-pro-chicken-500-tablet.png 1x, img/catalog/cat-energy-pro-chicken-500-tablet@2x.png 2x">
+                <img srcset="img/catalog/cat-energy-pro-chicken-500.png 1x, img/catalog/cat-energy-pro-chicken-500@2x.png 2x" width="68" height="86"
+                  alt="Оранжевая баночка 500 грамм с отметкой 0% Natural, названием и вкусом." class="cards__img card__img">
+              </picture>
             </a>
             <table class="cards__table card__table">
               <tr>
@@ -69,9 +81,13 @@
             <a href="" class="card__link" aria-label="Перейти на страницу товара">
               <h3 class="cards__title card__title">Cat Energy<br class="card__break-1"> PRO<br class="card__break-2"> 1000
                 г</h3>
-              <img src="img/catalog/cat-energy-pro-chicken-1000.png" width="84" height="101"
-                alt="Оранжевая баночка 1000 грамм с отметкой 0% Natural, названием и вкусом."
-                class="cards__img card__img card__img--large">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/cat-energy-pro-chicken-1000-desktop.png 1x, img/catalog/cat-energy-pro-chicken-1000-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/cat-energy-pro-chicken-1000-tablet.png 1x, img/catalog/cat-energy-pro-chicken-1000-tablet@2x.png 2x">
+                <img srcset="img/catalog/cat-energy-pro-chicken-1000.png 1x, img/catalog/cat-energy-pro-chicken-1000@2x.png 2x" width="84" height="101"
+                  alt="Оранжевая баночка 1000 грамм с отметкой 0% Natural, названием и вкусом."
+                  class="cards__img card__img card__img--large">
+              </picture>
             </a>
             <table class="cards__table card__table">
               <tr>
@@ -96,8 +112,12 @@
             <a href="" class="card__link" aria-label="Перейти на страницу товара">
               <h3 class="cards__title card__title">Cat Energy<br class="card__break-1"> PRO <br class="card__break-2"> 500
                 г</h3>
-              <img src="img/catalog/cat-energy-pro-fish-500.png" width="68" height="86"
-                alt="Зелёная баночка 500 грамм с отметкой 0% Natural, названием и вкусом." class="cards__img card__img">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/cat-energy-pro-fish-500-desktop.png 1x, img/catalog/cat-energy-pro-fish-500-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/cat-energy-pro-fish-500-tablet.png 1x, img/catalog/cat-energy-pro-fish-500-tablet@2x.png 2x">
+                <img srcset="img/catalog/cat-energy-pro-fish-500.png 1x, img/catalog/cat-energy-pro-fish-500@2x.png 2x" width="68" height="86"
+                  alt="Зелёная баночка 500 грамм с отметкой 0% Natural, названием и вкусом." class="cards__img card__img">
+              </picture>
             </a>
             <table class="cards__table card__table">
               <tr>
@@ -122,9 +142,13 @@
             <a href="" class="card__link" aria-label="Перейти на страницу товара">
               <h3 class="cards__title card__title">Cat Energy<br class="card__break-1"> PRO<br class="card__break-2"> 1000
                 г</h3>
-              <img src="img/catalog/cat-energy-pro-fish-1000.png" width="84" height="101"
-                alt="Зелёная баночка 1000 грамм с отметкой 0% Natural, названием и вкусом."
-                class="cards__img card__img card__img--large">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/cat-energy-pro-fish-1000-desktop.png 1x, img/catalog/cat-energy-pro-fish-1000-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/cat-energy-pro-fish-1000-tablet.png 1x, img/catalog/cat-energy-pro-fish-1000-tablet@2x.png 2x">
+                <img srcset="img/catalog/cat-energy-pro-fish-1000.png 1x, img/catalog/cat-energy-pro-fish-1000@2x.png 2x" width="84" height="101"
+                  alt="Зелёная баночка 1000 грамм с отметкой 0% Natural, названием и вкусом."
+                  class="cards__img card__img card__img--large">
+              </picture>
             </a>
             <table class="cards__table card__table">
               <tr>
@@ -149,8 +173,12 @@
             <a href="" class="card__link" aria-label="Перейти на страницу товара">
               <h3 class="cards__title card__title">Cat Energy<br class="card__break-1"> slim<br class="card__break-2"> 500
                 г</h3>
-              <img src="img/catalog/cat-energy-slim-buckwheat-500.png" width="68" height="86"
-                alt="Синяя баночка 500 грамм с отметкой 0% Natural, названием и вкусом." class="cards__img card__img">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/cat-energy-slim-buckwheat-500-desktop.png 1x, img/catalog/cat-energy-slim-buckwheat-500-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/cat-energy-slim-buckwheat-500-tablet.png 1x, img/catalog/cat-energy-slim-buckwheat-500-tablet@2x.png 2x">
+                <img srcset="img/catalog/cat-energy-slim-buckwheat-500.png 1x, img/catalog/cat-energy-slim-buckwheat-500@2x.png 2x " width="68" height="86"
+                  alt="Синяя баночка 500 грамм с отметкой 0% Natural, названием и вкусом." class="cards__img card__img">
+              </picture>
             </a>
             <table class="cards__table card__table">
               <tr>
@@ -175,9 +203,13 @@
             <a href="" class="card__link" aria-label="Перейти на страницу товара">
               <h3 class="cards__title card__title">Cat Energy<br class="card__break-1"> slim<br class="card__break-2">
                 1000 г</h3>
-              <img src="img/catalog/cat-energy-slim-buckwheat-1000.png" width="84" height="101"
-                alt="Синяя баночка 1000 грамм с отметкой 0% Natural, названием и вкусом."
-                class="cards__img card__img card__img--large">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/cat-energy-slim-buckwheat-1000-desktop.png 1x, img/catalog/cat-energy-slim-buckwheat-1000-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/cat-energy-slim-buckwheat-1000-tablet.png 1x, img/catalog/cat-energy-slim-buckwheat-1000-tablet@2x.png 2x">
+                <img srcset="img/catalog/cat-energy-slim-buckwheat-1000.png 1x, img/catalog/cat-energy-slim-buckwheat-1000@2x.png 2x" width="84" height="101"
+                  alt="Синяя баночка 1000 грамм с отметкой 0% Natural, названием и вкусом."
+                  class="cards__img card__img card__img--large">
+              </picture>
             </a>
             <table class="cards__table card__table">
               <tr>
@@ -202,9 +234,13 @@
             <a href="" class="card__link" aria-label="Перейти на страницу товара">
               <h3 class="cards__title card__title">Cat Energy<br class="card__break-1"> slim<br class="card__break-2"> 500
                 г</h3>
-              <img src="img/catalog/cat-energy-slim-rice-500.png" width="68" height="86"
-                alt="Фиолетовая баночка 500 грамм с отметкой 0% Natural, названием и вкусом."
-                class="cards__img card__img">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/cat-energy-slim-rice-500-desktop.png 1x, img/catalog/cat-energy-slim-rice-500-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/cat-energy-slim-rice-500-tablet.png 1x, img/catalog/cat-energy-slim-rice-500-tablet@2x.png 2x">
+                <img srcset="img/catalog/cat-energy-slim-rice-500.png 1x, img/catalog/cat-energy-slim-rice-500@2x.png 2x" width="68" height="86"
+                  alt="Фиолетовая баночка 500 грамм с отметкой 0% Natural, названием и вкусом."
+                  class="cards__img card__img">
+              </picture>
             </a>
             <table class="cards__table card__table">
               <tr>
