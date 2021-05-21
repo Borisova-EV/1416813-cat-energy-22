@@ -7,10 +7,6 @@
     width: 163px;
     align-items: start;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 13%;
-  }
 }
 
 .copyright__link {
@@ -35,17 +31,14 @@
     width: 27px;
     height: 34px;
     margin-right: 0;
+    fill: $special-grey-link;
 
     &:hover {
-      path {
-        fill: $green;
-      }
+      fill: $green;
     }
 
     &:active {
-      path {
-        fill: rgba($green, 0.3);
-      }
+      fill: rgba($green, 0.3);
     }
   }
 }
