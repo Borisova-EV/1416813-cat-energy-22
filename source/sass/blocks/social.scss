@@ -1,61 +1,86 @@
-.social__item {
-  display: inline-block;
-  margin-right: 40px;
-  width: 13px;
-  height: 20px;
+.social {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 
-  &:last-child {
-    margin-right: 0;
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 5px;
+    align-items: flex-start;
+  }
+}
+
+.social__item {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 39px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
   }
 }
 
 .social__link {
   display: block;
+  fill: $special-grey-link;
 
   &:hover {
-    path {
-      fill: $green;
-    }
+    fill: $green;
   }
 
   &:active {
-    path {
-      fill: rgba($green, 0.3);
-    }
+    fill: rgba($green, 0.3);
   }
 
   &--vkontakte {
-    @media (min-width: $tablet-width) {
-      width: 30px;
-      height: 22px;
+    .social__icon {
+      width: 23px;
+      height: 16px;
+
+      @media (min-width: $tablet-width) {
+        width: 30px;
+        height: 22px;
+      }
     }
   }
 
   &--instagram {
-    @media (min-width: $tablet-width) {
-      width: 23px;
-      height: 23px;
+    .social__icon {
+      width: 16px;
+      height: 16px;
+
+      @media (min-width: $tablet-width) {
+        width: 23px;
+        height: 23px;
+      }
     }
   }
 
   &--facebook {
-    @media (min-width: $tablet-width) {
-      width: 23px;
-      height: 23px;
+    .social__icon {
+      width: 22px;
+      height: 22px;
+      fill: none;
+      stroke: $special-grey-link;
+
+      @media (min-width: $tablet-width) {
+        width: 28px;
+        height: 33px;
+      }
     }
 
     &:hover {
-      path {
-        fill: none;
-        stroke: $green;
-      }
+      fill: none;
+      stroke: $green;
     }
 
     &:active {
-      path {
-        fill: none;
-        stroke: rgba($green, 0.3);
-      }
+      fill: none;
+      stroke: rgba($green, 0.3);
     }
   }
 }
