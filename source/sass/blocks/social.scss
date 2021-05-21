@@ -67,20 +67,20 @@
       fill: none;
       stroke: $special-grey-link;
 
+      &:hover {
+        fill: none;
+        stroke: $green;
+      }
+
+      &:active {
+        fill: none;
+        stroke: rgba($green, 0.3);
+      }
+
       @media (min-width: $tablet-width) {
         width: 28px;
         height: 33px;
       }
-    }
-
-    &:hover {
-      fill: none;
-      stroke: $green;
-    }
-
-    &:active {
-      fill: none;
-      stroke: rgba($green, 0.3);
     }
   }
 }
