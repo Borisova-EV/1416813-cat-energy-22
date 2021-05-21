@@ -14,7 +14,7 @@
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
   }
 }
 
@@ -88,7 +88,7 @@
   //green line
   &--legend {
     @media (min-width: $tablet-width) {
-      margin-bottom: 65px;
+      margin-bottom: 66px;
     }
 
     &::before {
@@ -103,8 +103,14 @@
   }
 
   &--textarea {
+    margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 57px;
+    }
+
     @media (min-width: $desktop-width) {
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
   }
 }
@@ -161,7 +167,7 @@
 
   &--checkbox {
     @media (min-width: $tablet-width) {
-      padding-top: 35px;
+      padding-top: 39px;
     }
 
     @media (min-width: $desktop-width) {
@@ -248,8 +254,7 @@
   &:focus {
     border-color: $dark-grey;
 
-    & + .form__icon line,
-    & + .form__icon path {
+    & + .form__icon {
       stroke: $green;
     }
   }
@@ -257,8 +262,7 @@
   &--error {
     border-color: $error;
 
-    & + .form__icon line,
-    & + .form__icon path {
+    & + .form__icon {
       stroke: $error;
     }
   }
@@ -304,6 +308,13 @@
 .form__icon {
   position: absolute;
   right: 13px;
+  fill: none;
+  stroke: $special-dark-grey;
+
+  &--email {
+    width: 19px;
+    height: 14px;
+  }
 }
 
 .form__legend {
@@ -384,7 +395,7 @@
 
 .form__comment {
   margin: 0;
-  padding-top: 18px;
+  padding-top: 19px;
   width: 100%;
   line-height: 16px;
   text-align: center;
@@ -398,7 +409,7 @@
 .form__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 2px;
+  padding-top: 4px;
 
   @media (min-width: $tablet-width) {
     padding-left: 70px;
@@ -416,7 +427,7 @@
   }
 
   &--columns {
-    padding-top: 10px;
+    padding-top: 12px;
 
     @media (min-width: $tablet-width) {
       display: grid;
