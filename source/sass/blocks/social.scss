@@ -6,13 +6,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 25px;
     padding-right: 5px;
-    align-items: flex-start;
   }
 }
 
 .social__item {
   @media (min-width: $tablet-width) {
     width: 30px;
+    height: 100%;
   }
 
   &:not(:last-child) {
