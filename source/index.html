@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.svg">
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="manifest.json" />
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -48,9 +48,10 @@
         <h2 class="promo__title title title--attention">Функциональное питание для котов</h2>
         <p class="promo__intro">Занялся собой? Займись котом!</p>
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo/promo-product-desktop.webp  1x, img/promo/promo-product-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/promo/promo-product-desktop.webp  1x, img/promo/promo-product-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/promo/promo-product-tablet.webp  1x, img/promo/promo-product-tablet@2x.webp 2x">
+            srcset="img/promo/promo-product-tablet.webp  1x, img/promo/promo-product-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/promo/promo-product.webp  1x, img/promo/promo-product@2x.webp 2x">
           <source media="(min-width: 1440px)"
             srcset="img/promo/promo-product-desktop.png  1x, img/promo/promo-product-desktop@2x.png 2x">
@@ -120,18 +121,29 @@
         <div class="example__slider slider">
           <div class="slider__content">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat/fat-cat-tablet.webp 1x, img/cat/fat-cat-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat/fat-cat.webp 1x, img/cat/fat-cat@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="img/cat/fat-cat-tablet.png 1x, img/cat/fat-cat-tablet@2x.png 2x">
               <img srcset="img/cat/fat-cat.png 1x, img/cat/fat-cat@2x.png 2x" width="311" height="232"
                 alt="Кот с избыточным весом." class="slider__img slider__img--display slider__img--before">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat/slim-cat-tablet.webp 1x, img/cat/slim-cat-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat/slim-cat.webp 1x, img/cat/slim-cat@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="img/cat/slim-cat-tablet.png 1x, img/cat/slim-cat-tablet@2x.png 2x">
               <img srcset="img/cat/slim-cat.png 1x, img/cat/slim-cat@2x.png 2x" width="311" height="240"
                 alt="Худой кот." class="slider__img slider__img--after">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/cat/cat-medium-desktop.webp 1x, img/cat/cat-medium-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat/cat-medium-tablet.webp 1x, img/cat/cat-medium-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat/cat-medium.webp 1x, img/cat/cat-medium@2x.webp 2x">
               <source media="(min-width: 1440px)"
                 srcset="img/cat/cat-medium-desktop.png 1x, img/cat/cat-medium-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
@@ -173,16 +185,16 @@
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href=""
             aria-label="Перейти на страницу интернет-магазина Cat Energy в ВКонтакте" target="_blank">
-            <svg class="social__icon" width="23" height="16" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icon/sprite.svg#vkontakte"></use>
+            <svg class="social__icon" width="23" height="16" viewBox="0 0 23 16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--instagram" href=""
             aria-label="Перейти на страницу интернет-магазина Cat Energy в Instagram" target="_blank">
-            <svg class="social__icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icon/sprite.svg#instagram"></use>
+            <svg class="social__icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
         </li>
@@ -190,7 +202,7 @@
           <a class="social__link social__link--facebook" href=""
             aria-label="Перейти на страницу интернет-магазина Cat Energy в Facebook" target="_blank">
             <svg class="social__icon" width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icon/sprite.svg#facebook"></use>
+              <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
@@ -201,14 +213,14 @@
         <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Перейти на страницу разработчика сайта HTML Academy" target="_blank">
           <svg width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icon/sprite.svg#icon-academy"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="js/menu.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/menu.min.js"></script>
+  <script src="js/slider.min.js"></script>
 </body>
 
 </html>
