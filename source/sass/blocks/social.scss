@@ -12,7 +12,6 @@
 .social__item {
   @media (min-width: $tablet-width) {
     width: 30px;
-    height: 100%;
   }
 
   &:not(:last-child) {

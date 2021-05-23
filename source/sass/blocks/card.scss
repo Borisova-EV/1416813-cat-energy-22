@@ -22,23 +22,6 @@
     padding-left: 37px;
   }
 
-  picture {
-    grid-row: 1/3;
-    align-self: center;
-    justify-self: center;
-    padding-top: 5px;
-
-    @media (min-width: $tablet-width) {
-      order: -1;
-      margin-bottom: 28px;
-      padding-top: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 36px;
-    }
-  }
-
   &--all {
     display: flex;
     flex-direction: column;
@@ -76,6 +59,23 @@
         width: 60px;
       }
     }
+  }
+}
+
+.card__picture {
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-bottom: 28px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
   }
 }
 
