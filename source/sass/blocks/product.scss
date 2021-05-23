@@ -1,6 +1,15 @@
 .product {
   position: relative;
   background-color: $basic-grey;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
 
   &::before {
     @include pseudo-element(50px, 50px);

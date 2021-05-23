@@ -9,6 +9,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: $green;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo/promo-catalog-background@2x.jpg");
