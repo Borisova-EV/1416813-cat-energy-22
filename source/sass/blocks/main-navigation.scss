@@ -9,8 +9,8 @@
   margin: 0;
   position: relative;
 
-  @media (max-width: $mobile-width-only) {
-    .main-navigation--closed & {
+  .main-navigation--closed & {
+    @media (max-width: $mobile-width-only) {
       display: none;
     }
   }
