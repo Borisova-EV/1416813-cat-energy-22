@@ -99,12 +99,23 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+// CopyFavicon
+
+ const copyFavicon = (done) => {
+   gulp.src([
+     "source/*.{ico,svg,png}",
+     "source/manifest.json",
+   ])
+   .pipe(gulp.dest("build"))
+   done();
+ }
+
+ exports.copyFavicon = copyFavicon;
 // Copy
 
 const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
     "source/img/**/*.svg",
     "!source/img/sprite-icon/*.svg",
   ], {
@@ -160,6 +171,7 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   copy,
+  copyFavicon,
   optimizeImages,
   gulp.parallel(
     styles,
@@ -177,6 +189,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   copy,
+  copyFavicon,
   copyImages,
   gulp.parallel(
     styles,
