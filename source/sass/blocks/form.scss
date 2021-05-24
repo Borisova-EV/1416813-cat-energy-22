@@ -255,15 +255,28 @@
     border-color: $dark-grey;
 
     & + .form__icon {
-      stroke: $green;
+      &--email {
+        stroke: $green;
+      }
+
+      &--phone {
+        fill: $green;
+      }
     }
   }
 
   &--error {
     border-color: $error;
+    border-width: 2px;
 
     & + .form__icon {
-      stroke: $error;
+      &--email {
+        stroke: $error;
+      }
+
+      &--phone {
+        fill: $error;
+      }
     }
   }
 
@@ -308,14 +321,19 @@
 .form__icon {
   position: absolute;
   right: 13px;
-  fill: none;
-  stroke: $special-dark-grey;
-  width: 20px;
-  height: 21px;
 
   &--email {
     width: 19px;
     height: 14px;
+    fill: none;
+    stroke: $special-dark-grey;
+  }
+
+  &--phone {
+    width: 20px;
+    height: 21px;
+    fill: $special-dark-grey;
+    stroke: none;
   }
 }
 
@@ -352,7 +370,7 @@
     }
   }
 
-  & br {
+  br {
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -364,7 +382,7 @@
     }
   }
 
-  & span {
+  span {
     @media (min-width: $tablet-width) {
       display: block;
       background-color: $white;

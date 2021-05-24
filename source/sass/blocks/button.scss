@@ -10,6 +10,10 @@
   background-color: $green;
   border: none;
 
+  &:visited {
+    color: $white;
+  }
+
   &:hover {
     background-color: $green-hover;
   }
@@ -17,10 +21,6 @@
   &:active {
     color: rgba($white, 0.3);
     background-color: $green-hover;
-  }
-
-  &:visited {
-    color: $white;
   }
 
   @media (min-width: $tablet-width) {
@@ -77,6 +77,11 @@
     color: $dark-grey;
     background-color: $basic-grey;
 
+    &:visited {
+      color: $dark-grey;
+      background-color: $basic-grey;
+    }
+
     &:hover {
       color: $dark-grey;
       background-color: $grey-button-hover;
@@ -85,11 +90,6 @@
     &:active {
       color: rgba($dark-grey, 0.3);
       background-color: $grey-button-hover;
-    }
-
-    &:visited {
-      color: $dark-grey;
-      background-color: $basic-grey;
     }
   }
 

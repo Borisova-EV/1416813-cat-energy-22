@@ -156,9 +156,11 @@
     }
   }
 
-  &:hover::after {
-    width: 32px;
-    background-size: cover;
+  &:hover {
+    &::after {
+      width: 32px;
+      background-size: cover;
+    }
   }
 
   &:active {

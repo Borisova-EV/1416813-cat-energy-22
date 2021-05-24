@@ -7,8 +7,10 @@
     @media (min-width: $desktop-width) {
       position: relative;
       z-index: 2;
+    }
 
-      &::before {
+    &::before {
+      @media (min-width: $desktop-width) {
         content: "";
         position: absolute;
         height: 100%;
@@ -113,7 +115,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    background-color: inherit;
     border-bottom: 1px dotted rgba($black, 0.24);
 
     &:hover {

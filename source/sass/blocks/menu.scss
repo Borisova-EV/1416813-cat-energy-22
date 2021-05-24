@@ -25,8 +25,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     border: none;
+  }
 
-    &:not(:last-child) {
+  &:not(:last-child) {
+    @media (min-width: $tablet-width) {
       margin-right: 36px;
     }
   }
@@ -37,10 +39,16 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 7px;
+  }
 
-    &--current {
+  &--current {
+    @media (min-width: $tablet-width) {
       border-bottom: 2px solid $green;
     }
+  }
+
+  &:visited {
+    color: $black;
   }
 
   &:hover {
@@ -51,13 +59,13 @@
     color: rgba($black, 0.3);
   }
 
-  &:visited {
-    color: $black;
-  }
-
   &--contrast {
     @media (min-width: $desktop-width) {
       color: $white;
+
+      &:visited {
+        color: $white;
+      }
 
       &:hover {
         color: rgba($white, 0.6);
@@ -65,10 +73,6 @@
 
       &:active {
         color: rgba($white, 0.3);
-      }
-
-      &:visited {
-        color: $white;
       }
 
       &.menu__link--current {
