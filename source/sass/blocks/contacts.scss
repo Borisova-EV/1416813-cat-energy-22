@@ -45,9 +45,30 @@
 .contacts__map {
   height: 362px;
   width: 100%;
+  background-image: url("../img/map/map.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map/map@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    background-image: url("../img/map/map-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map/map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map/map-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map/map-desktop@2x.png");
+    }
   }
 
   iframe {
