@@ -21,7 +21,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 23px;
     padding-top: 26px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
     padding-left: 36px;
     padding-right: 36px;
     border-top: none;
@@ -33,7 +33,7 @@
     padding-right: 0;
     align-items: center;
     padding-top: 16px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
   }
 
   &:not(:last-child) {
@@ -67,7 +67,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   line-height: 14px;
   color: $dark-grey;
 
@@ -80,6 +80,8 @@
 
     dd {
       margin-left: 52px;
+      min-width: 44px;
+      text-align: end;
     }
   }
 
@@ -92,6 +94,7 @@
     dd {
       margin-left: 0;
       min-width: 43px;
+      text-align: start;
     }
   }
 }

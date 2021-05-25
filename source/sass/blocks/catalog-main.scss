@@ -1,5 +1,5 @@
 .catalog-main {
-  padding-top: 31px;
+  padding-top: 29px;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -36,13 +36,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -51,17 +51,18 @@
 
 .catalog-main__extra {
   @include section(36px);
-  padding-top: 5px;
+  padding-top: 6px;
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
     padding-left: 0;
     margin-bottom: 76px;
     position: relative;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 86px;
     padding-left: 0;
     padding-right: 0;
   }

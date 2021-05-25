@@ -35,6 +35,14 @@
   }
 }
 
+.choice__input--radio:focus-visible {
+  + .choice__label {
+    &::before {
+      outline: 2px solid $grey-hover;
+    }
+  }
+}
+
 .choice__input--radio:checked {
   + .choice__label {
     &::after {
@@ -102,6 +110,14 @@
   + .choice__label {
     &::before {
       border-color: $grey-hover;
+    }
+  }
+}
+
+.choice__input--checkbox:focus-visible {
+  + .choice__label {
+    &::before {
+      outline: 2px solid $grey-hover;
     }
   }
 }

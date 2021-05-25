@@ -45,7 +45,7 @@
   <main class="form-main">
     <section class="form-main__program program">
       <div class="form-main__wrapper">
-        <h1 class="program__title title">Подбор программы</h1>
+        <h1 class="program__title title title--leading">Подбор программы</h1>
         <p class="program__text text">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
       </div>
@@ -71,17 +71,17 @@
           <fieldset class="form__section  form__section--border">
             <legend class="visually-hidden">Ваша цель</legend>
             <ul class="form__list">
-              <li class="form__item form__item--choice choice">
+              <li class="form__item  choice">
                 <input type="radio" name="target" id="target-slim"
                   class="form__input form__input--choice choice__input choice__input--radio" checked>
                 <label class="form__label choice__label" for="target-slim">похудение</label>
               </li>
-              <li class="form__item form__item--choice  choice">
+              <li class="form__item  choice">
                 <input type="radio" name="target" id="target-weight"
                   class="form__input form__input--choice choice__input choice__input--radio">
                 <label class="form__label choice__label" for="target-weight">Набор массы</label>
               </li>
-              <li class="form__item form__item--choice choice">
+              <li class="form__item choice">
                 <input type="radio" name="target" id="target-unknown"
                   class="form__input  form__input--choice  choice__input choice__input--radio">
                 <label class="form__label choice__label" for="target-unknown">Не знаю (Нужен ваш совет)</label>
@@ -143,7 +143,7 @@
           </ul>
         </fieldset>
         <div class="form__wrapper form__wrapper--columns">
-          <button type="submit" class="form__button button">отправить заявку</button>
+          <button type="submit" class="form__button button button--form">отправить заявку</button>
           <p class="form__comment">* — Обязательные поля</p>
         </div>
       </form>

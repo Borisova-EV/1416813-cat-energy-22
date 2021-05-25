@@ -28,8 +28,8 @@
 .page-footer__social {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 23px;
-  padding-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 17px;
   padding-left: 0;
   list-style: none;
   border-bottom: 1px solid $grey;
@@ -52,19 +52,23 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 128px 1fr 163px;
-    padding: 60px 30px 61px 30px;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 150px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 110px 49px 110px;
+    padding-left: 110px;
+    padding-right: 110px;
     max-width: 1440px;
     margin: 0 auto;
   }
 }
 
 .page-footer__copyright {
-  padding-top: 18px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

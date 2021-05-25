@@ -31,18 +31,9 @@
     padding-top: 15px;
     padding-bottom: 14px;
   }
+  // catalog
 
-  .form-main & {
-    font-size: 16px;
-    line-height: 20px;
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      font-size: 20px;
-    }
-  }
-
-  .catalog-main__catalog & {
+  &--catalog {
     font-size: 16px;
     padding-top: 10px;
 
@@ -57,7 +48,9 @@
     }
   }
 
-  .catalog-main__extra & {
+  // extra catalog
+
+  &--extra {
     @media (min-width: $tablet-width) {
       height: 39px;
       font-size: 16px;
@@ -70,6 +63,15 @@
     }
   }
 
+  &--form {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
 
   // grey button
   &--link-show {
