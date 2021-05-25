@@ -2,12 +2,12 @@
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($white, $white 55%, $background-grey 55%);
+    background-image: linear-gradient($white, $white 57%, $background-grey 57%);
     border-top: 1px solid $light-grey;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient($white, $white 27%, $basic-grey 27%);
+    background-image: linear-gradient($white, $white 30%, $basic-grey 30%);
     border: none;
     background-size: cover;
   }
@@ -37,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 68px;
   }
 }
 
@@ -110,7 +110,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 65px;
+    padding-top: 64px;
     padding-left: 110px;
     margin-bottom: 0;
     margin-right: 105px;
@@ -136,5 +136,6 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    overflow: hidden;
   }
 }

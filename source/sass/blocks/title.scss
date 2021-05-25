@@ -4,22 +4,18 @@
   @include oswald(36px, 40px);
   font-weight: normal;
 
-  &--attention {
-    line-height: 36px;
-    color: $white;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: $black;
   }
 
-  .form-main & {
+  &--attention {
     line-height: 36px;
+    color: $white;
   }
 
-  .catalog-main & {
+  &--leading {
     line-height: 36px;
   }
 }

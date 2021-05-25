@@ -77,5 +77,10 @@
     @media (min-width: $tablet-width) {
       height: 100%;
     }
+
+    @media (min-width: $desktop-width) {
+      height: 400px;
+      display: block;
+    }
   }
 }

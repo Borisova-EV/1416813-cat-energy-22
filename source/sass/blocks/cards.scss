@@ -8,13 +8,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 67px;
+    row-gap: 65px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
-    row-gap: 64px;
+    column-gap: 79px;
+    row-gap: 66px;
   }
 }
 
@@ -27,7 +27,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 29px;
+    margin-bottom: 26px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
@@ -42,16 +42,44 @@
     @media (min-width: $desktop-width) {
       padding-top: 25px;
     }
+
+    .card__picture {
+      margin-bottom: 22px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 35px;
+      }
+
+      &--small {
+        margin-bottom: 14px;
+
+        @media (min-width: $tablet-width) {
+          margin-bottom: 30px;
+        }
+
+        @media (min-width: $desktop-width) {
+          margin-bottom: 35px;
+        }
+      }
+    }
   }
 
   &--all {
     @media (min-width: $tablet-width) {
       margin-top: auto;
-      height: 87%;
-      padding-top: 89px;
+      height: 85%;
+      padding-top: 84px;
       background-image: none;
       background-color: $white;
       border: 1px solid $special-grey;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 79px;
     }
   }
 }
@@ -59,7 +87,7 @@
 .cards__title {
   grid-column-start: 2;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 12px;
@@ -67,7 +95,7 @@
 }
 
 .cards__table {
-  margin-bottom: 13px;
+  margin-bottom: 0;
 
   tr {
     display: flex;
