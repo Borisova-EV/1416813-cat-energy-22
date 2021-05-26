@@ -32,8 +32,8 @@
     padding-left: 0;
     padding-right: 0;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 17px;
+    padding-bottom: 15px;
   }
 
   &:not(:last-child) {
@@ -88,7 +88,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 85px;
     padding-right: 38px;
-    padding-top: 6px;
+    padding-top: 9px;
     justify-content: space-between;
 
     dd {

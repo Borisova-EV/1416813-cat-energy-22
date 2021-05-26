@@ -1,7 +1,5 @@
 .page-header {
   padding-top: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
   border-bottom: 1px solid $grey;
 
   @media (min-width: $tablet-width) {
@@ -19,5 +17,15 @@
     padding-right: 110px;
     width: 1440px;
     margin: 0 auto;
+  }
+}
+
+.page-header__logo {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
