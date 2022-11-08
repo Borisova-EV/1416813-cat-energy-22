@@ -28,6 +28,7 @@
 .social__link {
   display: block;
   fill: $special-grey-link;
+  transition: fill $trans--300;
 
   &:hover {
     fill: $green;

@@ -36,6 +36,7 @@
 
 .menu__link {
   color: $black;
+  transition: color $trans--300;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 7px;

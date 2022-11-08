@@ -111,6 +111,7 @@
   @include oswald(16px, 20px);
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

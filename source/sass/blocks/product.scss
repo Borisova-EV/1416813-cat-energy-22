@@ -150,6 +150,7 @@
     background-image: url("../img/icon/arrow-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
+    transition: width $trans--300;
 
     @media (min-width: $tablet-width) {
       margin-left: 25px;

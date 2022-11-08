@@ -9,6 +9,7 @@
   text-transform: uppercase;
   background-color: $green;
   border: none;
+  transition: color $trans--300, background-color $trans--300;
 
   &:visited {
     color: $white;
